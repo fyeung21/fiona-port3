@@ -1,12 +1,9 @@
 import React from "react"
 import "./layout.css"
 import Header from "./Header/Header"
-import Hero from "./hero/hero"
-import ProjectsContainer from "./Projects/ProjectsContainer"
-import Skills from "./Skills/Skills"
 import Footer from "./Footer"
 
-const Layout = () => {
+const Layout = ({ children }) => {
   return (
     <>
       <Header />
@@ -17,11 +14,10 @@ const Layout = () => {
           paddingTop: 0,
         }}
       >
-        <Hero />
-        <ProjectsContainer />
-        <Skills />
-        <Footer />
+        {children}
+
       </div>
+      <Footer />
     </>
   )
 }
