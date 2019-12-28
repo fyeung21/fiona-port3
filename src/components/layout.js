@@ -2,7 +2,7 @@ import React from "react"
 import "./layout.css"
 import Header from "./Header/Header"
 import Hero from "./hero/hero"
-import Projects from "./Projects/Projects"
+import ProjectsContainer from "./Projects/ProjectsContainer"
 import Skills from "./Skills/Skills"
 import Footer from "./Footer"
 
@@ -18,7 +18,7 @@ const Layout = () => {
         }}
       >
         <Hero />
-        <Projects />
+        <ProjectsContainer />
         <Skills />
         <Footer />
       </div>
