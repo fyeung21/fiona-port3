@@ -3,6 +3,7 @@ const Skills = () => {
     return (
         <div>
             <h1>skills</h1>
+
             <div className="skill-grid">
                 <div className="skill-item">
                     <h2>html</h2>
