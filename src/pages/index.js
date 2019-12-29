@@ -9,7 +9,7 @@ import Skills from "../components/Skills/Skills"
 const Portfolio = () => (
   <Layout>
     <SEO title="Home" />
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
+    <div>
       <Hero />
       <ProjectsContainer />
       <Skills />

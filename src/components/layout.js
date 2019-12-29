@@ -6,12 +6,10 @@ import Footer from "./Footer"
 const Layout = ({ children }) => {
   return (
     <>
-      <Header />
+      <Header style={{ display: "flex", justifyContent: "space-between" }} />
       <div
         style={{
-          margin: `0 auto`,
-          padding: `0px 1.0875rem 1.45rem`,
-          paddingTop: 0,
+          margin: `0 5rem`
         }}
       >
         {children}
