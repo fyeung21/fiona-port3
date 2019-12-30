@@ -4,7 +4,7 @@ import SEO from "../components/seo"
 
 import Hero from "../components/Hero/Hero"
 import ProjectsContainer from "../components/Projects/ProjectsContainer"
-import Skills from "../components/Skills/Skills"
+import SkillsContainer from "../components/Skills/SkillsContainer"
 
 const Portfolio = () => (
   <Layout>
@@ -12,7 +12,7 @@ const Portfolio = () => (
     <div>
       <Hero />
       <ProjectsContainer />
-      <Skills />
+      <SkillsContainer />
     </div>
   </Layout>
 )
