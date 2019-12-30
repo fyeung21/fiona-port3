@@ -19,7 +19,7 @@ const ProjectCard = (item) => {
                             color: "black"
                         }}>View Site</p>
                 </a>
-                <a href="{item.github}" style={{ textDecoration: "none" }} href="{item.url}">
+                <a href="{item.github}" style={{ textDecoration: "none" }}>
                     <p style={{
                         backgroundColor: "lightgrey",
                         padding: "5px 10px",
@@ -37,7 +37,8 @@ const ProjectCard = (item) => {
                     backgroundRepeat: "no-repeat",
                     overflow: "hidden",
                     position: "relative"
-                }} />
+                }}
+                alt="project screenshot" />
 
             <div style={{ margin: "1rem" }}>
                 <h3>{"item.title"}</h3>

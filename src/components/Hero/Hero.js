@@ -12,7 +12,7 @@ const Hero = () => {
                             textTransform: "capitalize",
                             textDecoration: "none",
                             color: "black",
-                            border: "2px solid teal",
+                            border: "2px solid lightblue",
                             borderRadius: "35px",
                             padding: "10px 20px"
                         }}>
@@ -20,13 +20,13 @@ const Hero = () => {
                     </a>
                 </li>
                 <li>
-                    <a href="#"
+                    <a href="../../images/resume.pdf"
                         style={{
                             margin: "0 5px",
                             textTransform: "capitalize",
                             textDecoration: "none",
                             color: "black",
-                            border: "2px solid teal",
+                            border: "2px solid lightblue",
                             borderRadius: "35px",
                             padding: "10px 20px"
                         }}>
