@@ -68,11 +68,19 @@ const ProjectsContainer = () => {
 
     return (
         <div>
-            {projectsList.map(item => {
-                return (
-                    <ProjectCard key={item.projectsList} />
-                )
-            })}
+            <h1 style={{ textTransform: "capitalize", textAlign: "center", marginTop: "5rem" }}>projects</h1>
+            <div style={{
+                display: "grid",
+                gridTemplateColumns: "repeat(3, 1fr)",
+                gridGap: "6.5rem 4.5rem",
+                margin: "5rem auto"
+            }}>
+                {projectsList.map(item => {
+                    return (
+                        <ProjectCard key={item.projectsList} />
+                    )
+                })}
+            </div>
         </div>
     )
 }
