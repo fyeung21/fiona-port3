@@ -17,7 +17,7 @@ let projectsList = [
         title: "Quotes on Dev",
         desc: "A simple site that cycles through an archive of quotes from devs on click.",
         img: "../../assets/images/qod.png",
-        url: "#",
+        url: null,
         github: "https://github.com/fyeung21/quotes-on-dev",
         tags: ["Ajax", "JS", "Php", "WordPress"]
 
@@ -27,7 +27,7 @@ let projectsList = [
         title: "Inhabitent",
         desc: "A fictional camping supply website, complete with a blog and shop.",
         img: "../../assets/images/inhabit.png",
-        url: "#",
+        url: null,
         github: "https://github.com/fyeung21/Inhabitent-Site",
         tags: ["Php", "JS", "WordPress"]
 
@@ -77,7 +77,14 @@ const ProjectsContainer = () => {
             }}>
                 {projectsList.map(item => {
                     return (
-                        <ProjectCard key={item.projectsList} />
+                        <ProjectCard
+                            title={item.title}
+                            desc={item.desc}
+                            img={item.img}
+                            url={item.url}
+                            github={item.url}
+                            tags={item.tags}
+                        />
                     )
                 })}
             </div>

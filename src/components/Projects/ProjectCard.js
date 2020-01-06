@@ -10,7 +10,7 @@ const ProjectCard = (item) => {
                 position: "relative"
             }}>
             <div style={{ display: "flex", justifyContent: "space-between" }}>
-                <a href="{item.url}" style={{ textDecoration: "none" }}>
+                <a href={item.url} style={{ textDecoration: "none" }}>
                     <p
                         style={{
                             backgroundColor: "lightgrey",
@@ -19,7 +19,7 @@ const ProjectCard = (item) => {
                             color: "black"
                         }}>View Site</p>
                 </a>
-                <a href="{item.github}" style={{ textDecoration: "none" }}>
+                <a href={item.github} style={{ textDecoration: "none" }}>
                     <p style={{
                         backgroundColor: "lightgrey",
                         padding: "5px 10px",
@@ -28,7 +28,7 @@ const ProjectCard = (item) => {
                     }}>View github</p>
                 </a>
             </div>
-            <img src={"item.img"}
+            <img src={item.img}
                 style={{
                     display: "block",
                     height: "300px",
@@ -41,8 +41,8 @@ const ProjectCard = (item) => {
                 alt="project screenshot" />
 
             <div style={{ margin: "1rem" }}>
-                <h3>{"item.title"}</h3>
-                <p>{"item.desc"}</p>
+                <h3>{item.title}</h3>
+                <p>{item.desc}</p>
                 <ul
                     style={{
                         display: "flex",
@@ -56,7 +56,11 @@ const ProjectCard = (item) => {
                         padding: "5px 10px",
                         margin: "1rem 0.25rem 1rem 0"
                     }}>
-                        <p>{"item.tags"}</p>
+                        {item.tags.map(item => {
+                            return (
+                                <p>{item.tags}</p>
+                            )
+                        })}
                     </li>
                     <li style={{
                         // backgroundColor: "lightblue",
