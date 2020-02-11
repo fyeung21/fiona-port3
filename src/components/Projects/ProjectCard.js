@@ -1,32 +1,37 @@
 import React from "react"
 
+const test = {
+    border: "2px solid lightgrey",
+    borderRadius: "5px",
+    boxShadow: "5px 5px 10px lightgrey",
+    position: "relative"
+}
+const flex = {
+    display: "flex", justifyContent: "space-between"
+}
+const hoverLink = {
+    backgroundColor: "lightgrey",
+    padding: "5px 10px",
+    textTransform: "capitalize",
+    color: "black"
+}
+
 const ProjectCard = (item) => {
     return (
-        <div
-            style={{
-                border: "2px solid lightgrey",
-                borderRadius: "5px",
-                boxShadow: "5px 5px 10px lightgrey",
-                position: "relative"
-            }}>
-            <div style={{ display: "flex", justifyContent: "space-between" }}>
-                <a href={item.url} style={{ textDecoration: "none" }}>
-                    <p
-                        style={{
-                            backgroundColor: "lightgrey",
-                            padding: "5px 10px",
-                            textTransform: "capitalize",
-                            color: "black"
-                        }}>View Site</p>
-                </a>
-                <a href={item.github} style={{ textDecoration: "none" }}>
-                    <p style={{
-                        backgroundColor: "lightgrey",
-                        padding: "5px 10px",
-                        textTransform: "capitalize",
-                        color: "black"
-                    }}>View github</p>
-                </a>
+        <div style={test}>
+            <div style={flex}>
+
+                {item.url ?
+                    <a href={item.url} style={{ textDecoration: "none" }}>
+                        <p style={hoverLink}>View Site</p>
+                    </a>
+                    : null}
+
+                {item.github ?
+                    <a href={item.github} style={{ textDecoration: "none" }}>
+                        <p style={hoverLink}>View github</p>
+                    </a>
+                    : null}
             </div>
             <img src={item.img}
                 style={{

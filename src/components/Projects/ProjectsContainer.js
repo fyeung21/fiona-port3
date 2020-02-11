@@ -82,7 +82,7 @@ const ProjectsContainer = () => {
                             desc={item.desc}
                             img={item.img}
                             url={item.url}
-                            github={item.url}
+                            github={item.github}
                             tags={item.tags}
                         />
                     )
