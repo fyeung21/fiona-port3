@@ -1,26 +1,39 @@
 import React from "react"
+import styled, { ThemeProvider } from "styled-components";
+
+const theme = {
+    font: "sans-serif",
+    // primary: "#333",
+    // secondary: "#999"
+};
 
 const Hero = () => {
     return (
-        <div style={heroStyle}>
-            <div style={borderBox}>
-                <h1>Fiona Yeung</h1>
-                <h2>Full-Stack Developer</h2>
-            </div>
+        <div>
+            <BorderBox>
+                <NameTitle>Fiona Yeung</NameTitle>
+                <Desc>Full-Stack Developer</Desc>
+            </BorderBox>
         </div>
     )
 }
 
-const heroStyle = {
-    padding: '11rem 0'
-}
+const BorderBox = styled.div`
+    padding: 5rem 2rem;
+    margin: 11rem auto;
+    width: 50%;
+    border: 3px solid lightgrey;
+    border-radius: 3px;
+    text-align: center;
+`
 
-const borderBox = {
-    padding: '20px 10px',
-    margin: '0 auto',
-    width: '50%',
-    border: '1px solid lightgrey',
-    textAlign: 'center'
-}
+const NameTitle = styled.h1`
+    font-size: 30px;
+    margin: 0.5rem 0;
+`
+
+const Desc = styled.h3`
+    font-size: 26px;
+`
 
 export default Hero
