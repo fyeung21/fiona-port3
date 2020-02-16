@@ -41,6 +41,9 @@ const ContactLink = styled.a`
     color: black;
     font-size: 26px;
     margin: 0 2rem;
+    &:hover {
+        background-color: lightblue;
+    }
 `
 
 const Text = styled.p`

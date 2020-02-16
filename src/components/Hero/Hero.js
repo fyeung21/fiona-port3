@@ -11,8 +11,8 @@ const Hero = () => {
     return (
         <div>
             <BorderBox>
-                <NameTitle>Fiona Yeung</NameTitle>
-                <Desc>Full-Stack Developer</Desc>
+                <Name>Fiona Yeung</Name>
+                <Title>Full-Stack Developer</Title>
             </BorderBox>
         </div>
     )
@@ -20,19 +20,19 @@ const Hero = () => {
 
 const BorderBox = styled.div`
     padding: 5rem 2rem;
-    margin: 11rem auto;
+    margin: 18rem auto 25rem;
     width: 50%;
     border: 3px solid lightgrey;
     border-radius: 3px;
     text-align: center;
 `
 
-const NameTitle = styled.h1`
+const Name = styled.h1`
     font-size: 30px;
     margin: 0.5rem 0;
 `
 
-const Desc = styled.h3`
+const Title = styled.h3`
     font-size: 26px;
 `
 

@@ -30,6 +30,9 @@ const NavText = styled.p`
     font-size: 18;
     margin: 1rem 5px;
     text-transform: capitalize;
+    &:hover {
+        background-color: lightblue;
+    }
 `
 
 export default Header;
