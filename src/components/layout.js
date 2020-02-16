@@ -4,22 +4,22 @@ import "./layout.css"
 import "../assets/fonts.css"
 import Header from "./Header/Header"
 import Footer from "./Footer"
+import styled from "styled-components";
 
 const Layout = ({ children }) => {
   return (
     <>
-      <Header style={{ display: "flex", justifyContent: "space-between" }} />
-      <div
-        style={{
-          margin: `0 5rem`
-        }}
-      >
+      <Header />
+      <Main>
         {children}
-
-        <Footer />
-      </div>
+      </Main>
+      <Footer />
     </>
   )
 }
+
+const Main = styled.div`
+    margin: 0 5rem;
+`
 
 export default Layout
