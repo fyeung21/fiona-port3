@@ -3,7 +3,7 @@ import './reset.css'
 import "./layout.css"
 import "../assets/fonts.css"
 import Header from "./Header/Header"
-import Footer from "./Footer"
+import Footer from "./Footer/Footer"
 import styled from "styled-components";
 
 const Layout = ({ children }) => {
