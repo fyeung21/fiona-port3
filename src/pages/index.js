@@ -5,6 +5,7 @@ import SEO from "../components/seo"
 import Hero from "../components/Hero/Hero"
 import ProjectsContainer from "../components/Projects/ProjectsContainer"
 import SkillsContainer from "../components/Skills/SkillsContainer"
+import Resume from "../components/Resume/Resume"
 
 const Portfolio = () => (
   <Layout>
@@ -12,7 +13,8 @@ const Portfolio = () => (
     <div>
       <Hero />
       <ProjectsContainer />
-      <SkillsContainer />
+      {/* <SkillsContainer /> */}
+      <Resume />
     </div>
   </Layout>
 )

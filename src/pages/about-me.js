@@ -1,6 +1,7 @@
-import React from "react"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import React from "react";
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import Resume from "../components/Resume/Resume";
 
 const AboutMe = () => (
   <Layout>
@@ -23,15 +24,7 @@ const AboutMe = () => (
             Molestias,
             voluptatibus numquam.
           </p>
-          <a href="../../images/resume.pdf" style={{ textTransform: "capitalize", textDecoration: "none", color: "lightblue" }}>
-            <h3 style={{
-              border: "2px solid lightblue",
-              borderRadius: "35px",
-              width: "141px",
-              padding: "10px 20px",
-              margin: "2rem auto"
-            }}>resume</h3>
-          </a>
+          <Resume />
         </div>
         <img src="../img.png" loading="lazy" alt="me" />
       </div>
