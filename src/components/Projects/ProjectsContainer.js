@@ -1,6 +1,7 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
 import styled from "styled-components";
+import { Link } from "gatsby";
 
 let projectsList = [
     {
@@ -11,7 +12,6 @@ let projectsList = [
         url: "https://radio.van.cp.academy.red",
         github: "https://github.com/fyeung21/radio-ws1-2019",
         tags: ["Php", "JS", "WordPress"]
-
     },
     {
         id: 1,
@@ -21,7 +21,6 @@ let projectsList = [
         url: null,
         github: "https://github.com/fyeung21/quotes-on-dev",
         tags: ["Ajax", "JS", "Php", "WordPress"]
-
     },
     {
         id: 2,
@@ -31,7 +30,6 @@ let projectsList = [
         url: null,
         github: "https://github.com/fyeung21/Inhabitent-Site",
         tags: ["Php", "JS", "WordPress"]
-
     },
     {
         id: 3,
@@ -41,7 +39,6 @@ let projectsList = [
         url: "https://github.com/fyeung21/Instanews-App",
         github: "https://github.com/fyeung21/Instanews-App",
         tags: ["Ajax", "CSS", "JS"]
-
     },
     {
         id: 4,
@@ -51,7 +48,6 @@ let projectsList = [
         url: "https://fyeung21.github.io/pong-project/",
         github: "https://github.com/fyeung21/pong-project",
         tags: ["JS", "SVGs", "Node"]
-
     },
     {
         id: 5,
@@ -61,7 +57,6 @@ let projectsList = [
         url: "https://fyeung21.github.io/Aloha-Webpage/",
         github: "https://github.com/fyeung21/Aloha-Webpage",
         tags: ["HTML", "CSS", "JS"]
-
     }
 ];
 
@@ -84,6 +79,9 @@ const ProjectsContainer = () => {
                     )
                 })}
             </StyledGrid>
+            <Link to="/archives" style={linkStyle}>
+                <NavText>more...</NavText>
+            </Link>
         </div>
     )
 }
@@ -99,6 +97,19 @@ const StyledGrid = styled.div`
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 6.5rem 4.5rem;
     margin: 5rem auto;
+`
+const linkStyle = {
+    textDecoration: "none",
+    color: "black",
+}
+
+const NavText = styled.p`
+    font-size: 18;
+    margin: 1rem 5px;
+    width:5%;
+    &:hover {
+        background-color: lightblue;
+    }
 `
 
 export default ProjectsContainer
