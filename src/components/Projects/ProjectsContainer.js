@@ -14,6 +14,7 @@ const ProjectsContainer = () => {
                 {projectsList.map(item => {
                     return (
                         <ProjectCard
+                            key={item.id}
                             title={item.title}
                             desc={item.desc}
                             img={item.img}
