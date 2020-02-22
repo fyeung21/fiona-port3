@@ -1,43 +1,32 @@
-import React from "react"
-import SkillCard from "./SkillCard"
-
-let skillsList = [
-    {
-        id: 0,
-        title: "front-end",
-        skills: ["html", "php", "css", "JavaScript", "react"]
-    },
-    {
-        id: 1,
-        title: "back-end",
-        skills: ["Node.js", "Express.js", "Meteor", "GraphQL"]
-    },
-    {
-        id: 2,
-        title: "tools/cms",
-        skills: ["Gulp", "Meteor", "Gatsby", "WordPress"]
-    }
-];
+import React from "react";
+import SkillCard from "./SkillCard";
+import skillsList from "./skillsList";
+import styled from "styled-components";
 
 const SkillsContainer = () => {
-
     return (
         <div>
-            <h1 style={{ textTransform: "capitalize", textAlign: "center", marginTop: "5rem" }}>skills</h1>
-            <div style={{
-                borderRadius: "5px",
-                boxShadow: "5px 5px 10px lightgrey",
-                margin: "5rem 10rem",
-                border: "2px solid lightgrey"
-            }}>
+            <SectionHeading>skills</SectionHeading>
+            <div>
                 {skillsList.map(item => {
                     return (
-                        <SkillCard key={item.skillsList} />
+                        <SkillCard
+                            key={item.id}
+                            title={item.title}
+                            skills={item.skills} />
                     )
                 })}
             </div>
         </div>
     )
-}
+};
+
+const SectionHeading = styled.h1`
+    text-transform: capitalize;
+    text-align: center;
+    margin: 10rem 0 0 0;
+    font-size: 40px;
+`
+
 
 export default SkillsContainer
