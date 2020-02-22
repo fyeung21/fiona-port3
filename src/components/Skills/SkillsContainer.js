@@ -7,7 +7,7 @@ const SkillsContainer = () => {
     return (
         <div>
             <SectionHeading>skills</SectionHeading>
-            <div>
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "top" }}>
                 {skillsList.map(item => {
                     return (
                         <SkillCard
@@ -24,7 +24,7 @@ const SkillsContainer = () => {
 const SectionHeading = styled.h1`
     text-transform: capitalize;
     text-align: center;
-    margin: 10rem 0 0 0;
+    margin: 10rem 0 5rem 0;
     font-size: 40px;
 `
 

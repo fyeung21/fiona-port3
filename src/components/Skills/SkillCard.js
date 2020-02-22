@@ -7,20 +7,21 @@ const Skills = (item) => {
     return (
         <StyledCard>
             <Category>{item.title}</Category>
-            <Flex>
-                {list.map(item => {
-                    return (
-                        <Text>{item}</Text>
-                    )
-                })}
-            </Flex>
+            {/* <Flex> */}
+            {list.map(item => {
+                return (
+                    <Text>{item}</Text>
+                )
+            })}
+            {/* </Flex> */}
         </StyledCard>
     )
 }
 
 const StyledCard = styled.div`
-    border-bottom: 2px solid lightgrey;
-    padding: 3rem 2rem;
+    border-left: 2px solid lightgrey;
+    padding: 1rem 2rem;
+    height: 300px;
 `
 
 const Category = styled.h2`
