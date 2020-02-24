@@ -33,10 +33,16 @@ const Footer = () => {
 
 const FooterCont = styled.div`
     border-bottom: 2px solid lightgrey;
-    margin: 0 4rem 3rem 4rem;
+    margin: 0 0.75rem 3rem;
     justify-content: space-between; 
     display: flex; 
     list-style: none;
+    @media (min-width: 768px) {
+        margin: 0 2rem 3rem;
+    }
+    @media (min-width: 1025px) {
+        margin: 0 3rem 3rem;
+    }
 `
 
 const ContactCont = styled.div`

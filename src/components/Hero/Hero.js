@@ -21,10 +21,12 @@ const Hero = () => {
 const BorderBox = styled.div`
     padding: 5rem 2rem;
     margin: 18rem auto 25rem;
-    width: 50%;
-    border: 3px solid lightgrey;
-    border-radius: 3px;
     text-align: center;
+    @media (min-width: 1025px) {
+        width: 50%;
+        border: 3px solid lightgrey;
+        border-radius: 3px;
+    }
 `
 
 const Name = styled.h1`

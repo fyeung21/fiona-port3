@@ -19,7 +19,13 @@ const Layout = ({ children }) => {
 }
 
 const Main = styled.div`
-    margin: 0 5rem;
+    margin: 0 2rem;
+    @media (min-width: 768px) {
+      margin: 0 3.25rem;
+  }
+    @media (min-width: 1025px) {
+      margin: 0 5rem;
+  }
 `
 
 export default Layout

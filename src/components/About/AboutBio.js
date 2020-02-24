@@ -18,11 +18,13 @@ const AboutBio = () => {
 }
 
 const TextCont = styled.div`
-    max-width: 80%;
     margin: 3rem auto 0;
+    @media (min-width: 1025px) {
+        max-width: 80%;
+    }
 `
 const Bio = styled.p`
-    font-size:18px;
+    font-size: 18px;
     line-height: 32px;
     text-align: center;
 `
