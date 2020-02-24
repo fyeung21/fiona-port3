@@ -5,8 +5,15 @@ import "font-awesome/css/font-awesome.min.css";
 const Footer = () => {
     return (
         <FooterCont>
-            <Text>Copyright © Fiona 2020</Text>
+            <Text>Copyright &copy; Fiona 2020</Text>
             <ContactCont>
+                <ContactLink
+                    className="fa fa-envelope"
+                    href="mailto:fyeung21@gmail.com?subject=Let's grab a coffee!"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                />
+
                 <ContactLink
                     className="fa fa-linkedin"
                     href="https://www.linkedin.com/in/fionaa-yeungg/"
@@ -40,7 +47,7 @@ const ContactLink = styled.a`
     text-decoration: none;
     color: black;
     font-size: 26px;
-    margin: 0 2rem;
+    margin: 0 0 0 3rem;
     &:hover {
         background-color: lightblue;
     }
