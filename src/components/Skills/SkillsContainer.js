@@ -24,14 +24,19 @@ const SkillsContainer = () => {
 const SectionHeading = styled.h1`
     text-transform: capitalize;
     text-align: center;
-    margin: 10rem 0 5rem 0;
+    margin: 0 3rem;
     font-size: 40px;
+    @media (min-width: 1025px) {
+        margin: 10rem 0 5rem 0;
+    }
 `
 
 const Flex = styled.div`
-    display: flex;
-    justify-content: space-between;
-    align-items: top;
+    @media (min-width: 1025px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: top;
+    }
 `
 
 
