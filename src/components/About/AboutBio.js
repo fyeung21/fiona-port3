@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import Resume from "../Resume/Resume";
 
 const AboutBio = () => {
     return (
@@ -14,21 +13,18 @@ const AboutBio = () => {
                 individual who is very goal oriented and strives to get things done while acknowledging that
                 there is always room for improvement.
             </Bio>
-            <Resume />
         </TextCont>
     )
 }
 
 const TextCont = styled.div`
-    max-width: 50%;
-    width: 100%;
-    height: 400px;
-    margin: 3rem 2rem 0 0;
-    border-radius: 5px;
+    max-width: 80%;
+    margin: 3rem auto 0;
 `
 const Bio = styled.p`
     font-size:18px;
-    line-height: 28px;
+    line-height: 32px;
+    text-align: center;
 `
 
 export default AboutBio;
