@@ -3,7 +3,7 @@ const skillsList = [
     {
         id: 0,
         title: "Front-end",
-        skills: ["HTML", "CSS", "Sass", "JavaScript", "JQuery", "React", "Styled Components", "Php"]
+        skills: ["HTML", "CSS", "Sass", "Php", "JavaScript", "JQuery", "React", "Styled Components"]
     },
     {
         id: 1,
@@ -18,7 +18,7 @@ const skillsList = [
     {
         id: 3,
         title: "Tools and Systems",
-        skills: ["Git & Github", "Jest", "Wordpress", "GatsbyJS"]
+        skills: ["Git & Github", "Jest", "Wordpress"]
     }
 ];
 

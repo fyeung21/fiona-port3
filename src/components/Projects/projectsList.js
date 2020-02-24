@@ -6,7 +6,7 @@ const projectsList = [
         img: require("../../assets/images/pong.png"),
         url: null,
         github: "https://github.com/fyeung21/r10-app",
-        tags: ["React Native", "Apollo Client", "GraphQL"]
+        tags: ["React Native", "Apollo", "GraphQL"]
     },
     {
         id: 1,

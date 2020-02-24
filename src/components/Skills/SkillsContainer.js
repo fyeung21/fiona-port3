@@ -7,7 +7,7 @@ const SkillsContainer = () => {
     return (
         <div>
             <SectionHeading>skills</SectionHeading>
-            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "top" }}>
+            <Flex>
                 {skillsList.map(item => {
                     return (
                         <SkillCard
@@ -16,7 +16,7 @@ const SkillsContainer = () => {
                             skills={item.skills} />
                     )
                 })}
-            </div>
+            </Flex>
         </div>
     )
 };
@@ -26,6 +26,12 @@ const SectionHeading = styled.h1`
     text-align: center;
     margin: 10rem 0 5rem 0;
     font-size: 40px;
+`
+
+const Flex = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
 `
 
 

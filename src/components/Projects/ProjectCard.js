@@ -26,16 +26,16 @@ const ProjectCard = (item) => {
 
                 <Flex>
                     {item.github ?
-                        <StyledLink href={item.github}>
+                        <LinkSource href={item.github}>
                             Source
-                        </StyledLink>
+                        </LinkSource>
                         : null
                     }
 
                     {item.url ?
-                        <StyledLink href={item.url}>
+                        <LinkDemo href={item.url}>
                             Demo
-                        </StyledLink>
+                        </LinkDemo>
                         : null
                     }
                 </Flex>
@@ -53,7 +53,8 @@ const StyledCard = styled.div`
 
 const StyledImg = styled.img`
     display: block;
-    height: 300px;
+    height: 250px;
+    width: 380px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -97,7 +98,7 @@ const Flex = styled.div`
     display: flex;
 `
 
-const StyledLink = styled.a`
+const LinkSource = styled.a`
     text-transform: capitalize;
     color: black;
     text-decoration: none;
@@ -107,6 +108,18 @@ const StyledLink = styled.a`
     margin: 1rem 1rem 1rem 0;
     &:hover {
         background-color: lightblue;
+    }
+`
+const LinkDemo = styled.a`
+    text-transform: capitalize;
+    color: black;
+    text-decoration: none;
+    border: 3px solid lightpink;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 1rem 1rem 1rem 0;
+    &:hover {
+        background-color: lightpink;
     }
 `
 

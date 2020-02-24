@@ -15,7 +15,7 @@ const moreProjectsList = [
         img: require("../../assets/images/pong.png"),
         url: "https://fyeung21.github.io/pong-project/",
         github: "https://github.com/fyeung21/pong-project",
-        tags: ["JS", "NodeJS"]
+        tags: ["JS", "Node"]
     },
     {
         id: 2,
@@ -60,7 +60,7 @@ const moreProjectsList = [
         img: require("../../assets/images/qod.png"),
         url: null,
         github: "https://github.com/fyeung21/boomtown",
-        tags: ["React", "Apollo Client", "GraphQL"]
+        tags: ["React", "Apollo", "GraphQL"]
     },
     {
         id: 7,
@@ -78,7 +78,7 @@ const moreProjectsList = [
         img: require("../../assets/images/pong.png"),
         url: null,
         github: "https://github.com/fyeung21/r10-app",
-        tags: ["React Native", "Apollo Client", "GraphQL"]
+        tags: ["React Native", "Apollo", "GraphQL"]
     }
 ];
 
