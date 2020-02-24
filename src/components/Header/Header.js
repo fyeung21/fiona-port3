@@ -6,18 +6,16 @@ const Header = () => {
     return (
         <NavCont>
             <Link to="/" style={linkStyle}>
-                <NavText>portfolio</NavText>
+                <NavText>Fiona Yeung</NavText>
             </Link>
-            <Link to="/about-me" style={linkStyle}>
-                <NavText>about me</NavText>
-            </Link>
+            <NavText>Back to Top</NavText>
         </NavCont>
     )
 }
 
 const NavCont = styled.div`
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     border-bottom: 2px solid lightgrey;
     margin: 0 3rem;
 `
