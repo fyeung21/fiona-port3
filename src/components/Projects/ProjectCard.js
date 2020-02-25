@@ -46,9 +46,13 @@ const ProjectCard = (item) => {
 }
 
 const StyledCard = styled.div`
+    margin: 0 2rem 0 0;
     border-radius: 5px;
     box-shadow: 5px 5px 10px lightgrey;
     position: relative;
+    @media (min-width: 1400px) {
+        margin: 0
+    }
 `
 
 const StyledImg = styled.img`
@@ -64,7 +68,9 @@ const StyledImg = styled.img`
 ////////////////
 
 const CardText = styled.div`
-    margin: 1rem;
+    padding: 1rem;
+    // background-color:#f1f1f1;
+    // border-radius: 5px;
 `
 
 const TitleFlex = styled.div`

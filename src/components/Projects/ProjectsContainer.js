@@ -39,10 +39,21 @@ const SectionHeading = styled.h1`
     font-size: 40px;
 `
 const StyledGrid = styled.div`
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 6.5rem 4.5rem;
-    margin: 5rem auto;
+    display: flex;
+    overflow-x: scroll;
+    margin: 5rem 0 2rem 0;
+    padding: 0 0 5rem 0;
+    @media (min-width: 1200px) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 5rem 1rem;
+    }
+    @media (min-width: 1400px) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 6.5rem 4.5rem;
+        margin: 5rem auto;
+    }
 `
 const linkStyle = {
     textDecoration: "none",
