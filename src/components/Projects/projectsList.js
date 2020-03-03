@@ -2,16 +2,16 @@ const projectsList = [
     {
         id: 0,
         title: "R10",
-        desc: "Mobile App for a fictional conference event",
+        desc: "A mobile app for infomation on sessions and speakers at a fictional conference.",
         img: require("../../assets/images/pong.png"),
         url: null,
         github: "https://github.com/fyeung21/r10-app",
-        tags: ["React Native", "Apollo", "GraphQL"]
+        tags: ["React Native", "GraphQL"]
     },
     {
         id: 1,
         title: "Coop Radio",
-        desc: "Custom theme for Vancouver Coop Radio's landing site for artists.",
+        desc: "A custom theme for Vancouver Coop Radio's landing site for artists.",
         img: require("../../assets/images/coop.png"),
         url: "https://radio.van.cp.academy.red",
         github: "https://github.com/fyeung21/radio-ws1-2019",
@@ -42,7 +42,7 @@ const projectsList = [
         img: require("../../assets/images/pong.png"),
         url: "https://fyeung21.github.io/pong-project/",
         github: "https://github.com/fyeung21/pong-project",
-        tags: ["CSS", "JS"]
+        tags: ["JS", "Node"]
     },
     {
         id: 5,

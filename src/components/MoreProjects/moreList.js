@@ -56,29 +56,29 @@ const moreProjectsList = [
     {
         id: 6,
         title: "Boomtown",
-        desc: "Sharing and borrowing site",
+        desc: "A website to view and share items for borrowing.",
         img: require("../../assets/images/qod.png"),
         url: null,
         github: "https://github.com/fyeung21/boomtown",
-        tags: ["React", "Apollo", "GraphQL"]
+        tags: ["React", "GraphQL"]
     },
     {
         id: 7,
         title: "Self-Order",
-        desc: "self ordering dimsum web app",
+        desc: "A self ordering dimsum web app for restaurants.",
         img: require("../../assets/images/pong.png"),
         url: null,
         github: "https://github.com/fyeung21/self-order",
-        tags: ["React", "Meteor", "MongoDB"]
+        tags: ["React", "MongoDB"]
     },
     {
         id: 8,
         title: "R10",
-        desc: "Mobile App for a fictional conference event",
+        desc: "A mobile app for infomation on sessions and speakers at a fictional conference.",
         img: require("../../assets/images/pong.png"),
         url: null,
         github: "https://github.com/fyeung21/r10-app",
-        tags: ["React Native", "Apollo", "GraphQL"]
+        tags: ["React Native", "GraphQL"]
     }
 ];
 

@@ -41,7 +41,7 @@ const SectionHeading = styled.h1`
     text-align: center;
     margin-top: 5rem;
 `
-const StyledGrid = styled.div`
+export const StyledGrid = styled.div`
     display: flex;
     overflow-x: scroll;
     margin: 5rem 0 2rem 0;
@@ -50,9 +50,10 @@ const StyledGrid = styled.div`
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 5rem 1rem;
+        overflow-x: hidden;
     }
     @media (min-width: 1400px) {
-        grid-gap: 5rem 3rem;
+        grid-gap: 5rem 2.5rem;
         margin: 4rem auto;
     }
 `

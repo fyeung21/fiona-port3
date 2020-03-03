@@ -1,8 +1,10 @@
 import React from "react";
 import ProjectCard from "../Projects/ProjectCard";
 import styled from "styled-components";
+import { theme } from "../../globalStyles";
 import { Link } from "gatsby";
 import moreProjectsList from "./moreList";
+import { StyledGrid } from "../Projects/ProjectsContainer";
 
 const MoreProjectsCont = () => {
     const reverseList = moreProjectsList.reverse()
@@ -34,26 +36,31 @@ const MoreProjectsCont = () => {
 }
 
 const SectionTitle = styled.p`
-    font-size: 20px;
+    font-family: ${theme.bodyFont};
+    font-size: ${theme.bodyFontSize};
+    color: ${theme.bodyTextColor};
 `
-const StyledGrid = styled.div`
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 6.5rem 4.5rem;
-    margin: 5rem auto;
-`
+// const StyledGrid = styled.div`
+//     display: grid;
+//     grid-template-columns: repeat(3, 1fr);
+//     grid-gap: 6.5rem 4.5rem;
+//     margin: 5rem auto;
+// `
 const linkStyle = {
     textDecoration: "none",
     color: "black"
 }
 
 const NavText = styled.p`
-    font-size: 18;
+    font-family: ${theme.bodyFont};
+    font-size: ${theme.bodyFontSize};
+    font-style: italic;
+    color: ${theme.bodyTextColor};
     margin: 1rem 5px;
     text-transform: capitalize;
     width:5%;
     &:hover {
-        background-color: lightblue;
+        background-color: ${theme.onHoverColor};
     }
 `
 
