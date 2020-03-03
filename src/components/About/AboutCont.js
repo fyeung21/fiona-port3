@@ -1,6 +1,7 @@
 import React from "react";
 import AboutBio from "./AboutBio";
 import styled from "styled-components";
+import { theme } from "../../globalStyles";
 
 const AboutCont = () => (
     <Section>
@@ -10,9 +11,11 @@ const AboutCont = () => (
 );
 
 const SectionHeading = styled.h1`
+    font-family: ${theme.headingFont};
+    font-size: ${theme.h1FontSize};
+    color: ${theme.mainTxtColor};
     text-transform: capitalize;
     text-align: center;
-    font-size: 40px;
 `
 const Section = styled.div`
     margin: 5rem 0 8rem;

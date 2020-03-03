@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { theme } from "../../globalStyles";
 
 const ProjectCard = (item) => {
 
@@ -46,10 +47,10 @@ const ProjectCard = (item) => {
 }
 
 const StyledCard = styled.div`
-    margin: 0 2rem 0 0;
-    border-radius: 5px;
-    box-shadow: 5px 5px 10px lightgrey;
+    border-radius: 10px;
+    box-shadow: 15px 15px 25px ${theme.shadowColor};
     position: relative;
+    margin: 0 2rem 0 0;
     @media (min-width: 1400px) {
         margin: 0
     }
@@ -58,19 +59,20 @@ const StyledCard = styled.div`
 const StyledImg = styled.img`
     display: block;
     height: 250px;
-    width: 380px;
+    width: 400px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     overflow: hidden;
     position: relative;
+    border-radius: 10px 10px 0 0;
 `
 ////////////////
 
 const CardText = styled.div`
     padding: 1rem;
-    // background-color:#f1f1f1;
-    // border-radius: 5px;
+    background-color:#fff;
+    border-radius: 0 0 10px 10px;
 `
 
 const TitleFlex = styled.div`
@@ -79,8 +81,10 @@ const TitleFlex = styled.div`
     align-items: center;
 `
 
-const Heading = styled.h2`
-    font-size: 28px;
+const Heading = styled.h3`
+    font-family: ${theme.headingFont};
+    font-size: ${theme.h3FontSize};
+    color: ${theme.mainTxtColor};
     margin: 0.5rem 0;
 `
 
@@ -90,13 +94,18 @@ const StackList = styled.ul`
 `
 
 const StackItem = styled.li`
-    margin: 0 0.5rem 0 0;
+    font-family: ${theme.bodyFont};
+    font-size: ${theme.bodyFontSize};
     font-style: italic;
+    color: ${theme.mainTxtColor};
+    margin: 0 0.5rem 0 0;
 `
 ////////////////
 
 const Text = styled.p`
-    font-size: 18px;
+    font-family: ${theme.bodyFont};
+    font-size: ${theme.bodyFontSize};
+    color: ${theme.mainTxtColor};
     line-height: 26px;
 `
 
@@ -105,8 +114,10 @@ const Flex = styled.div`
 `
 
 const LinkSource = styled.a`
+    font-family: ${theme.bodyFont};
+    font-size: ${theme.bodyFontSize};
+    color: ${theme.mainTxtColor};
     text-transform: capitalize;
-    color: black;
     text-decoration: none;
     border: 3px solid lightblue;
     border-radius: 5px;
@@ -117,8 +128,10 @@ const LinkSource = styled.a`
     }
 `
 const LinkDemo = styled.a`
+    font-family: ${theme.bodyFont};
+    font-size: ${theme.bodyFontSize};
+    color: ${theme.mainTxtColor};
     text-transform: capitalize;
-    color: black;
     text-decoration: none;
     border: 3px solid lightpink;
     border-radius: 5px;

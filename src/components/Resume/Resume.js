@@ -1,13 +1,12 @@
 import React from "react";
 import styled from "styled-components";
+import { theme } from "../../globalStyles";
 
 const Resume = () => {
     return (
-        <>
-            <StyledBtn>
-                <Text href="/">Resume</Text>
-            </StyledBtn>
-        </>
+        <StyledBtn>
+            <Text href="/">Resume</Text>
+        </StyledBtn>
     )
 }
 
@@ -17,7 +16,9 @@ const StyledBtn = styled.div`
 `
 
 const Text = styled.a`
-    font-size: 30px;
+    font-family: ${theme.bodyFont};
+    font-size: ${theme.h2FontSize};
+    color: ${theme.mainTxtColor};
     border: 5px solid lightblue;
     border-radius: 10px;
     padding: 5px 10px;

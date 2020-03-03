@@ -1,11 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import "font-awesome/css/font-awesome.min.css";
+import { theme } from "../../globalStyles";
 
 const Footer = () => {
     return (
         <FooterCont>
-            <Text>Copyright &copy; Fiona 2020</Text>
+            <Text>Developed by Fiona &copy; 2020</Text>
             <ContactCont>
                 <ContactLink
                     className="fa fa-envelope"
@@ -32,11 +33,11 @@ const Footer = () => {
 }
 
 const FooterCont = styled.div`
-    border-bottom: 2px solid lightgrey;
-    margin: 0 0.75rem 3rem;
-    justify-content: space-between; 
     display: flex; 
+    justify-content: space-between; 
+    border-bottom: 2px solid lightgrey;
     list-style: none;
+    margin: 0 0.75rem 3rem;
     @media (min-width: 768px) {
         margin: 0 2rem 3rem;
     }
@@ -50,16 +51,19 @@ const ContactCont = styled.div`
 `
 
 const ContactLink = styled.a`
+    font-size: ${theme.h3FontSize};
+    color: ${theme.mainTxtColor};
     text-decoration: none;
-    color: black;
-    font-size: 26px;
     margin: 0 0 0 3rem;
     &:hover {
-        background-color: lightblue;
+        background-color: ${theme.onHoverColor};
     }
 `
 
 const Text = styled.p`
+    font-family: ${theme.bodyFont};
+    font-size: ${theme.bodyFontSize};
+    color: ${theme.mainTxtColor};
     margin: 1rem 0
 `
 

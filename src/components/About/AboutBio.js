@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { theme } from "../../globalStyles";
 
 const AboutBio = () => {
     return (
@@ -24,9 +25,11 @@ const TextCont = styled.div`
     }
 `
 const Bio = styled.p`
-    font-size: 18px;
-    line-height: 32px;
+    font-family: ${theme.bodyFont};
+    font-size: ${theme.bodyFontSize};
+    color: ${theme.mainTxtColor};
     text-align: center;
+    line-height: 32px;
 `
 
 export default AboutBio;

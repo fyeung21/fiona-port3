@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { theme } from "../../globalStyles";
 
 const Skills = (item) => {
     const list = item.skills;
@@ -30,8 +31,10 @@ const StyledCard = styled.div`
 `
 
 const Category = styled.h2`
+    font-family: ${theme.headingFont};
+    font-size: ${theme.h2FontSize};
+    color: ${theme.mainTxtColor};
     line-height: 38px;
-    font-size: 26px;
 `
 const Flex = styled.div`
     display: flex;
@@ -42,9 +45,11 @@ const Flex = styled.div`
 `
 
 const Text = styled.p`
-    font-size: 18px;
-    margin: 1rem 1rem 0 0;
+    font-family: ${theme.bodyFont};
+    font-size: ${theme.bodyFontSize};
     font-style: italic;
+    color: ${theme.mainTxtColor};
+    margin: 1rem 1rem 0 0;
     @media (min-width: 1025px) {
         font-style: normal;
     }

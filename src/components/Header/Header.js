@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import styled from "styled-components";
+import { theme } from "../../globalStyles";
 
 const Header = () => {
     return (
@@ -31,11 +32,13 @@ const linkStyle = {
 }
 
 const NavText = styled.p`
-    font-size: 18;
+    font-family: ${theme.bodyFont};
+    font-size: ${theme.bodyFontSize};
+    color: ${theme.bodyTextColor};
     margin: 1rem 5px;
     text-transform: capitalize;
     &:hover {
-        background-color: lightblue;
+        background-color: ${theme.onHoverColor};
     }
 `
 
