@@ -17,17 +17,14 @@ export const theme = {
     bodyFontSize: "18px"
 }
 
-// #ECECEC gray color to try
-
 export const ScreenBkgCont = styled.div`
 // background: #C9D6FF;  
 // background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF); 
 // background: linear-gradient(to right, #E2E2E2, #C9D6FF);
-background-color: #ececec;
-// background-color: #fff;
+// background-color: #ececec;
+background-color: #fff;
 // background-image: linear-gradient(to right top, #c9d6ff, #d6dcfb, #e1e2f7, #eae9f4, #f1f1f1);
-// background-image: linear-gradient(to right top, #c9d6ff, #dadfff, #e8e9fe, #f4f4ff, #ffffff);
-
+// background: linear-gradient(to right top, #c9d6ff, #dadfff, #e8e9fe, #f4f4ff, #ffffff);
 
     // background-image: linear-gradient(to right top, #e5e4e4, #ebebeb, #f2f1f2, #f8f8f8, #ffffff);
 `
