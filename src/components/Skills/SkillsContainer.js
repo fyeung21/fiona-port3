@@ -2,7 +2,7 @@ import React from "react";
 import SkillCard from "./SkillCard";
 import skillsList from "./skillsList";
 import styled from "styled-components";
-import { theme } from "../../globalStyles";
+import { SectionHeading } from "../../globalStyles";
 
 const SkillsContainer = () => {
     return (
@@ -21,18 +21,6 @@ const SkillsContainer = () => {
         </div>
     )
 };
-
-const SectionHeading = styled.h1`
-    font-family: ${theme.headingFont};
-    font-size: ${theme.h1FontSize};
-    color: ${theme.headingTxtColor};
-    text-transform: capitalize;
-    text-align: center;
-    margin: 0 3rem;
-    @media (min-width: 1025px) {
-        margin: 10rem 0 5rem 0;
-    }
-`
 
 const Flex = styled.div`
     @media (min-width: 1025px) {

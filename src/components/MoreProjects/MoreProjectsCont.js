@@ -40,12 +40,7 @@ const SectionTitle = styled.p`
     font-size: ${theme.bodyFontSize};
     color: ${theme.bodyTextColor};
 `
-// const StyledGrid = styled.div`
-//     display: grid;
-//     grid-template-columns: repeat(3, 1fr);
-//     grid-gap: 6.5rem 4.5rem;
-//     margin: 5rem auto;
-// `
+
 const linkStyle = {
     textDecoration: "none",
     color: "black"

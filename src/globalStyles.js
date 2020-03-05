@@ -29,3 +29,15 @@ background-color: #fff;
 
     // background-image: linear-gradient(to right top, #e5e4e4, #ebebeb, #f2f1f2, #f8f8f8, #ffffff);
 `
+
+export const SectionHeading = styled.h1`
+    font-family: ${theme.headingFont};
+    font-size: ${theme.h1FontSize};
+    color: ${theme.headingTxtColor};
+    text-transform: capitalize;
+    text-align: center;
+    margin: 8rem 0 3rem 0;
+    @media (min-width: 1025px) {
+        // margin: 10rem 0 5rem 0;
+    }
+`

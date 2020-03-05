@@ -61,11 +61,14 @@ export const Text = styled.p`
     font-family: ${theme.bodyFont};
     font-size: ${theme.bodyFontSize};
     color: ${theme.mainTxtColor};
+    font-weight: 300;
     line-height: 26px;
+    margin: 0.5rem 0 0 0;
 `
 
 export const Flex = styled.div`
     display: flex;
+    margin: 1.5rem 0 0 0;
 `
 
 export const LinkTo = styled.a`
@@ -77,7 +80,7 @@ export const LinkTo = styled.a`
     border: 3px solid ${props => props.isSource ? theme.sourceColor : theme.demoColor};
     border-radius: 5px;
     padding: 5px 10px;
-    margin: 1rem 1rem 1rem 0;
+    margin: 1rem 1rem 0.15rem 0;
     &:hover {
         background-color: ${props => props.isSource ? theme.sourceColor : theme.demoColor};
     }
