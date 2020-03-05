@@ -22,7 +22,7 @@ const moreProjectsList = [
         title: "Instanews",
         desc: "A simple website that uses ajax to pull top stories from the New York Times.",
         img: require("../../assets/images/instanews.png"),
-        url: "https://github.com/fyeung21/Instanews-App",
+        url: "https://fyeung21.github.io/Instanews-App/",
         github: "https://github.com/fyeung21/Instanews-App",
         tags: ["CSS", "JS"]
     },

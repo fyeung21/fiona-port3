@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const theme = {
     primaryColor: "#49773A",
+    accentColor: "#B1C5E9",
     shadowColor: "#DEDEDE",
     onHoverColor: "lightblue",
     sourceColor: "lightblue",
