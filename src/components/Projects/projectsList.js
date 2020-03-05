@@ -3,7 +3,7 @@ const projectsList = [
         id: 0,
         title: "R10",
         desc: "A mobile app for infomation on sessions and speakers at a fictional conference.",
-        img: require("../../assets/images/pong.png"),
+        img: require("../../assets/images/r10collage.jpg"),
         url: null,
         github: "https://github.com/fyeung21/r10-app",
         tags: ["React Native", "GraphQL"]
@@ -13,7 +13,7 @@ const projectsList = [
         title: "Coop Radio",
         desc: "A custom theme for Vancouver Coop Radio's landing site for artists.",
         img: require("../../assets/images/coop.png"),
-        url: "https://radio.van.cp.academy.red",
+        url: null,
         github: "https://github.com/fyeung21/radio-ws1-2019",
         tags: ["CSS", "JS", "WordPress"]
     },

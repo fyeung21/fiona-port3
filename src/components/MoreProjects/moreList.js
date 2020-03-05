@@ -75,7 +75,7 @@ const moreProjectsList = [
         id: 8,
         title: "R10",
         desc: "A mobile app for infomation on sessions and speakers at a fictional conference.",
-        img: require("../../assets/images/pong.png"),
+        img: require("../../assets/images/r10collage.jpg"),
         url: null,
         github: "https://github.com/fyeung21/r10-app",
         tags: ["React Native", "GraphQL"]
