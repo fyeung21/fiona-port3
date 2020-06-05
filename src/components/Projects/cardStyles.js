@@ -2,25 +2,28 @@ import styled from "styled-components";
 import { theme } from "../../globalStyles";
 
 export const StyledCard = styled.div`
-    border-radius: 10px;
-    box-shadow: 15px 15px 25px ${theme.shadowColor};
     position: relative;
     margin: 0 2rem 0 0;
+    :hover {
+        opacity: 0.5;
+    }
     @media (min-width: 1400px) {
-        margin: 0
+        margin: 0;
     }
 `
 
 export const StyledImg = styled.img`
     display: block;
-    height: 250px;
-    width: 400px;
+    // height: 350px;
+    width: 550px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     overflow: hidden;
     position: relative;
-    border-radius: 10px 10px 0 0;
+    border-radius: 10px;
+    margin: 0 auto;
+    box-shadow: 15px 15px 25px ${theme.shadowColor};
 `
 ////////////////
 

@@ -20,8 +20,9 @@ const ProjectCard = (item) => {
         <StyledCard>
             <StyledImg
                 src={item.img}
-                alt="project screenshot" />
-            <CardText>
+                alt="project screenshot"
+            />
+            {/* <CardText>
                 <TitleFlex>
                     <Heading>{item.title}</Heading>
                     <StackList>
@@ -51,7 +52,7 @@ const ProjectCard = (item) => {
                     }
                 </Flex>
 
-            </CardText>
+            </CardText> */}
         </StyledCard>
     );
 }
