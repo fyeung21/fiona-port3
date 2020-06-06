@@ -11,17 +11,27 @@ import {
     Flex,
     LinkTo
 } from './cardStyles';
+import HoverDetails from './HoverDetails';
 
 const ProjectCard = (item) => {
+
+    const AddHoverDetails = () => {
+        return (
+            <HoverDetails />
+        );
+    };
 
     const stack = item.tags;
 
     return (
         <StyledCard>
-            <StyledImg
-                src={item.img}
-                alt="project screenshot"
-            />
+            <div onHover={AddHoverDetails}>
+                <StyledImg
+                    src={item.img}
+                    alt="project screenshot"
+                />
+            </div>
+            <HoverDetails />
             {/* <CardText>
                 <TitleFlex>
                     <Heading>{item.title}</Heading>

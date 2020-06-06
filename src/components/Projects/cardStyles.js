@@ -12,6 +12,11 @@ export const StyledCard = styled.div`
     }
 `
 
+export const StyledHover = styled.div`
+    position: absolute;
+    z-index: 2;
+`
+
 export const StyledImg = styled.img`
     display: block;
     // height: 350px;
