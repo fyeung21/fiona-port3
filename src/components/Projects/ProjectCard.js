@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby";
 import {
     StyledCard,
     StyledImg,
@@ -24,15 +25,16 @@ const ProjectCard = (item) => {
     const stack = item.tags;
 
     return (
-        <StyledCard>
-            <div onHover={AddHoverDetails}>
-                <StyledImg
-                    src={item.img}
-                    alt="project screenshot"
-                />
-            </div>
-            <HoverDetails />
-            {/* <CardText>
+        <Link to="/project-details">
+            <StyledCard>
+                <div onHover={AddHoverDetails}>
+                    <StyledImg
+                        src={item.img}
+                        alt="project screenshot"
+                    />
+                </div>
+                <HoverDetails />
+                {/* <CardText>
                 <TitleFlex>
                     <Heading>{item.title}</Heading>
                     <StackList>
@@ -63,7 +65,8 @@ const ProjectCard = (item) => {
                 </Flex>
 
             </CardText> */}
-        </StyledCard>
+            </StyledCard>
+        </Link>
     );
 }
 

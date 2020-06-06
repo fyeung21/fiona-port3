@@ -26,7 +26,7 @@ export const StyledImg = styled.img`
     background-repeat: no-repeat;
     overflow: hidden;
     position: relative;
-    border-radius: 10px;
+    border-radius: 5px;
     margin: 0 auto;
     box-shadow: 15px 15px 25px ${theme.shadowColor};
 `
