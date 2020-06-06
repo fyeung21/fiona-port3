@@ -9,7 +9,7 @@ import { ScreenBkgCont } from "../globalStyles"
 const Layout = ({ children }) => {
   return (
     <ScreenBkgCont>
-      {/* <Header /> */}
+      <Header />
       <Main>
         {children}
       </Main>

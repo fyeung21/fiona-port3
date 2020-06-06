@@ -13,7 +13,7 @@ const Portfolio = () => (
     <SEO title="Home" />
     <div>
       <Hero />
-      <AboutCont />
+      {/* <AboutCont /> */}
       <ProjectsContainer />
       <SkillsContainer />
       <Resume />
