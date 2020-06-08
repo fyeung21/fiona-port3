@@ -29,9 +29,6 @@ const HomeIcon = styled.p`
     color: ${theme.bodyTextColor};
     margin: 1rem 5px;
     text-transform: capitalize;
-    &:hover {
-        background-color: ${theme.onHoverColor};
-    }
 `
 
 const NavCont = styled.div`
@@ -59,10 +56,11 @@ const NavText = styled.p`
     font-family: ${theme.bodyFont};
     font-size: ${theme.bodyFontSize};
     color: ${theme.bodyTextColor};
-    margin: 1rem 2rem;
+    padding: 1rem 1.5rem;
     text-transform: capitalize;
     &:hover {
         background-color: ${theme.onHoverColor};
+        color: ${theme.invertTxtColor};
     }
 `
 const NavTextResume = styled.a`
@@ -70,10 +68,11 @@ const NavTextResume = styled.a`
     font-size: ${theme.bodyFontSize};
     color: black;
     text-decoration: none;
-    margin: 1rem 3px 1rem 2rem;
+    padding: 1rem 1.5rem;
     text-transform: capitalize;
     &:hover {
         background-color: ${theme.onHoverColor};
+        color: ${theme.invertTxtColor};
     }
 `
 

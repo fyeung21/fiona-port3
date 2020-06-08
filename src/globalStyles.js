@@ -4,7 +4,7 @@ export const theme = {
     primaryColor: "#49773A",
     accentColor: "#B1C5E9",
     shadowColor: "#DEDEDE",
-    onHoverColor: "lightblue",
+    onHoverColor: "#B1C5E9",
     sourceColor: "lightblue",
     demoColor: "lightpink",
     screenBkgColor: "#f1f1f1",
