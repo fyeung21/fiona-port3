@@ -1,15 +1,14 @@
 import React from "react";
 import styled from "styled-components";
-import { theme } from "../../globalStyles";
 import projectsList from "../Projects/projectsList";
-import ProjectTitle from "./ProjectTitle";
+import ProjectNavTitle from "./ProjectNavTitle";
 
 const ProjectNav = () => {
     return (
         <ProjectNavCont>
             {projectsList.map(item => {
                 return (
-                    <ProjectTitle
+                    <ProjectNavTitle
                         key={item.id}
                         title={item.title}
                     />

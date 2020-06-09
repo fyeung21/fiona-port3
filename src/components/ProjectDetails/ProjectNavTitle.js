@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { theme } from "../../globalStyles";
 
-const ProjectTitle = (item) => {
+const ProjectNavTitle = (item) => {
     return (
         <>
             <Title>{item.title}</Title>//
@@ -22,4 +22,4 @@ const Title = styled.a`
     }
 `
 
-export default ProjectTitle;
+export default ProjectNavTitle;

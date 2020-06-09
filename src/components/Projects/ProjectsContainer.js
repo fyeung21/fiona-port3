@@ -3,6 +3,7 @@ import ProjectCard from "./ProjectCard";
 import styled from "styled-components";
 import projectsList from "./projectsList";
 import { theme, SectionHeading } from "../../globalStyles";
+import ProjectCard2 from "./ProjectCard2";
 
 
 const ProjectsContainer = () => {
@@ -26,6 +27,12 @@ const ProjectsContainer = () => {
                 })}
             </StyledGrid>
             <Text>scroll right for more →</Text>
+
+            <StyledGrid>
+                <ProjectCard2 key={2} />
+                <ProjectCard2 key={4} />
+                <ProjectCard2 key={5} />
+            </StyledGrid>
         </>
     )
 }
