@@ -9,7 +9,7 @@ import ProjectNav from "../components/ProjectDetails/ProjectNav";
 
 const ProjectDetails = () => (
     <Layout>
-        <SEO title="project-details" />
+        <SEO title="Project Details" />
         <div>
             <Banner />
             <Details />
