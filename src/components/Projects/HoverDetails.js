@@ -1,7 +1,7 @@
 import React from "react";
 import { Heading, StyledHover } from "./cardStyles";
 
-const HoverDetails = (item) => {
+const HoverDetails = () => {
     return (
         <StyledHover>
             <Heading>Testing</Heading>

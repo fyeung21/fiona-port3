@@ -5,25 +5,20 @@ import {
     StyledImg,
 } from './cardStyles';
 import HoverDetails from './HoverDetails';
+import useHover from '../hooks/useHover';
 
 const ProjectCard = (item) => {
 
-    const AddHoverDetails = () => {
-        return (
-            <HoverDetails />
-        );
-    };
+    // const [ref, hovered] = useHover();
 
     return (
         <Link to="/project-details">
             <StyledCard>
-                <div onHover={AddHoverDetails}>
-                    <StyledImg
-                        src={item.img}
-                        alt="project screenshot"
-                    />
-                </div>
-                <HoverDetails />
+                <StyledImg
+                    src={item.img}
+                    alt="project screenshot"
+                />
+                {/* {hovered && <HoverDetails />} */}
             </StyledCard>
         </Link>
     );
