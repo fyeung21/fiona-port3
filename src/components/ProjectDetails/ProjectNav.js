@@ -1,12 +1,15 @@
 import React from "react";
 import styled from "styled-components";
-import projectsList from "../Projects/projectsList";
+import projectsList from "../../assets/projectsList";
 import ProjectNavTitle from "./ProjectNavTitle";
 
 const ProjectNav = () => {
     return (
         <ProjectNavCont>
             {projectsList.map(item => {
+                if (item.variant !== "Main") {
+                    return null
+                }
                 return (
                     <ProjectNavTitle
                         key={item.id}

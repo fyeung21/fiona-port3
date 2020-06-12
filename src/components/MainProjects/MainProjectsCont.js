@@ -1,18 +1,21 @@
 import React from "react";
-import ProjectCard from "./ProjectCard";
+import ProjectCard from "../ProjectCard/ProjectCard";
 import styled from "styled-components";
-import projectsList from "./projectsList";
+import projectsList from "../../assets/projectsList";
 import { theme, SectionHeading } from "../../globalStyles";
-import ProjectCard2 from "./ProjectCard2";
-
 
 const ProjectsContainer = () => {
+
+    const reverseList = projectsList.reverse()
 
     return (
         <>
             <SectionHeading>projects</SectionHeading>
             <StyledGrid>
-                {projectsList.map(item => {
+                {reverseList.map(item => {
+                    if (item.variant !== "Main") {
+                        return null
+                    }
                     return (
                         <ProjectCard
                             key={item.id}
@@ -27,12 +30,6 @@ const ProjectsContainer = () => {
                 })}
             </StyledGrid>
             <Text>scroll right for more →</Text>
-
-            <StyledGrid>
-                <ProjectCard2 key={2} />
-                <ProjectCard2 key={4} />
-                <ProjectCard2 key={5} />
-            </StyledGrid>
         </>
     )
 }

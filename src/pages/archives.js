@@ -2,13 +2,13 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import MoreProjectsCont from "../components/MoreProjects/MoreProjectsCont"
+import ArchiveProjectsCont from "../components/ArchiveProjects/ArchiveProjectsCont"
 
 const Archives = () => (
     <Layout>
-        <SEO title="Home" />
+        <SEO title="Archives" />
         <div>
-            <MoreProjectsCont />
+            <ArchiveProjectsCont />
         </div>
     </Layout>
 )

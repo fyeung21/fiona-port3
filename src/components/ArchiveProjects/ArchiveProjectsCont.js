@@ -1,13 +1,14 @@
 import React from "react";
-import ProjectCard from "../Projects/ProjectCard";
+import ProjectCard from "../ProjectCard/ProjectCard";
 import styled from "styled-components";
 import { theme } from "../../globalStyles";
 import { Link } from "gatsby";
-import moreProjectsList from "./moreList";
-import { StyledGrid } from "../Projects/ProjectsContainer";
+import projectsList from "../../assets/projectsList";
+import { StyledGrid } from "../MainProjects/MainProjectsCont";
 
 const MoreProjectsCont = () => {
-    const reverseList = moreProjectsList.reverse()
+
+    const reverseList = projectsList.reverse()
 
     return (
         <div>
