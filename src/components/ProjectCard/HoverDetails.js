@@ -1,10 +1,11 @@
 import React from "react";
 import { Heading, StyledHover } from "./cardStyles";
 
-const HoverDetails = () => {
+const HoverDetails = ({ title, desc }) => {
     return (
         <StyledHover>
-            <Heading>Testing</Heading>
+            <Heading>{title}</Heading>
+            <Heading>{desc}</Heading>
         </StyledHover>
     );
 }
