@@ -2,7 +2,7 @@ import React from "react";
 import ProjectCard from "../ProjectCard/ProjectCard";
 import styled from "styled-components";
 import projectsList from "../../assets/projectsList";
-import { theme, SectionHeading } from "../../globalStyles";
+import { theme, SectionHeading } from "../globalStyles";
 
 const ProjectsContainer = () => {
 

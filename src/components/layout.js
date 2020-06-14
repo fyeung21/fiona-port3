@@ -4,7 +4,7 @@ import "../assets/fonts.css"
 import Header from "./Header/Header"
 import Footer from "./Footer/Footer"
 import styled from "styled-components";
-import { ScreenBkgCont } from "../globalStyles"
+import { ScreenBkgCont } from "./globalStyles"
 
 const Layout = ({ children }) => {
   return (

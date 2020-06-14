@@ -1,7 +1,7 @@
 import React from "react";
 import ProjectCard from "../ProjectCard/ProjectCard";
 import styled from "styled-components";
-import { theme } from "../../globalStyles";
+import { theme } from "../globalStyles";
 import { Link } from "gatsby";
 import projectsList from "../../assets/projectsList";
 import { StyledGrid } from "../MainProjects/MainProjectsCont";
@@ -56,7 +56,7 @@ const NavText = styled.p`
     text-transform: capitalize;
     width:5%;
     &:hover {
-        background-color: ${theme.onHoverColor};
+        background-color: ${theme.accentColor};
     }
 `
 

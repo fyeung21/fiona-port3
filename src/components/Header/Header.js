@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import styled from "styled-components";
-import { theme } from "../../globalStyles";
+import { theme } from "../globalStyles";
 import Pdf from "../../assets/FionaYeung-Resume.pdf";
 
 const Header = () => {
@@ -59,8 +59,7 @@ const NavText = styled.p`
     padding: 1rem 1.5rem;
     text-transform: capitalize;
     &:hover {
-        background-color: ${theme.onHoverColor};
-        color: ${theme.invertTxtColor};
+        background-color: ${theme.accentColor};
     }
 `
 const NavTextResume = styled.a`
@@ -71,8 +70,7 @@ const NavTextResume = styled.a`
     padding: 1rem 1.5rem;
     text-transform: capitalize;
     &:hover {
-        background-color: ${theme.onHoverColor};
-        color: ${theme.invertTxtColor};
+        background-color: ${theme.accentColor};
     }
 `
 

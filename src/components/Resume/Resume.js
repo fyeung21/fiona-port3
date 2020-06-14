@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { theme } from "../../globalStyles";
+import { theme } from "../globalStyles";
 import Pdf from "../../assets/FionaYeung-Resume.pdf";
 
 const Resume = () => {

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { theme } from "../../globalStyles";
+import { theme } from "../globalStyles";
 
 const ProjectNavTitle = (item) => {
     return (
@@ -18,7 +18,8 @@ const Title = styled.a`
     margin: 1rem;
     text-transform: capitalize;
     &:hover {
-        background-color: ${theme.onHoverColor};
+        background-color: ${theme.accentColor};
+        cursor: pointer;
     }
 `
 

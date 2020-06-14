@@ -2,7 +2,7 @@ import React from "react";
 import SkillCard from "./SkillCard";
 import skillsList from "./skillsList";
 import styled from "styled-components";
-import { SectionHeading } from "../../globalStyles";
+import { SectionHeading } from "../globalStyles";
 
 const SkillsContainer = () => {
     return (

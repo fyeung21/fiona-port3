@@ -5,13 +5,11 @@ export const theme = {
     accentColor: "#B1C5E9",
     shadowColor: "#DEDEDE",
     onHoverColor: "#B1C5E9",
-    sourceColor: "lightblue",
-    demoColor: "lightpink",
-    screenBkgColor: "#f1f1f1",
+    screenBkgColor: "#f8f8f8",
     mainTxtColor: "#000",
-    invertTxtColor: "#fff",
-    headingFont: `"Poppins", Helvetica, sans-serif`,
-    bodyFont: `"Poppins", Helvetica, sans-serif`,
+    invertTxtColor: "#fafafa",
+    headingFont: `"Barlow Semi Condensed", Helvetica, sans-serif`,
+    bodyFont: `"Open sans", Helvetica, sans-serif`,
     h1FontSize: "40px",
     h2FontSize: "30px",
     h3FontSize: "24px",
@@ -34,7 +32,7 @@ export const SectionHeading = styled.h1`
     font-family: ${theme.headingFont};
     font-size: ${theme.h1FontSize};
     color: ${theme.headingTxtColor};
-    text-transform: capitalize;
+    text-transform: uppercase;
     text-align: center;
     margin: 8rem 0 3rem 0;
     @media (min-width: 1025px) {

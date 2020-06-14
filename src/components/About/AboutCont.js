@@ -1,7 +1,7 @@
 import React from "react";
 import AboutBio from "./AboutBio";
 import styled from "styled-components";
-import { SectionHeading } from "../../globalStyles";
+import { SectionHeading } from "../globalStyles";
 
 const AboutCont = () => (
     <Section>
