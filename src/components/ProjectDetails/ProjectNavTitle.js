@@ -11,14 +11,20 @@ const ProjectNavTitle = (item) => {
 };
 
 const Title = styled.a`
-    font-family: ${theme.bodyFont};
+    font-family: ${theme.headingFont};
     font-size: ${theme.h3FontSize};
-    color: black;
+    color: ${theme.mainTxtColor};
+    font-weight: 500;
     text-decoration: none;
-    margin: 1rem;
-    text-transform: capitalize;
+    text-transform: uppercase;
+    border-radius: 5px;
+    line-height: 60px;
+    letter-spacing: 1px;
+    padding: 0.75rem 1.25rem;
+    margin: 0.75rem;
     &:hover {
         background-color: ${theme.accentColor};
+        color: ${theme.invertTxtColor};
         cursor: pointer;
     }
 `

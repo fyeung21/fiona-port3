@@ -8,7 +8,7 @@ const Header = () => {
         <NavCont>
             <Link to="/" style={linkStyle}>
                 <Flex>
-                    <HomeIcon>Fiona Yeung</HomeIcon>
+                    <HomeIcon>Fiona Y.</HomeIcon>
                     <Title>Full-Stack Developer</Title>
                 </Flex>
             </Link>

@@ -27,6 +27,7 @@ export const SectionHeading = styled.h1`
     font-size: ${theme.h1FontSize};
     color: ${theme.headingTxtColor};
     text-transform: uppercase;
+    letter-spacing: 1px;
     text-align: center;
     margin: 3rem 0;
     @media (min-width: 1025px) {

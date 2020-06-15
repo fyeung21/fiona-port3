@@ -52,6 +52,7 @@ export const HoverTitle = styled.p`
     font-weight: 500;
     margin: 0.5rem 0 1rem;
     text-transform: uppercase;
+    letter-spacing: 1px;
     
 `
 export const HoverDesc = styled.p`

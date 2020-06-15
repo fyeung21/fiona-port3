@@ -4,9 +4,12 @@ import projectsList from "../../assets/projectsList";
 import ProjectNavTitle from "./ProjectNavTitle";
 
 const ProjectNav = () => {
+
+    const reverseList = projectsList.reverse()
+
     return (
         <ProjectNavCont>
-            {projectsList.map(item => {
+            {reverseList.map(item => {
                 if (item.variant !== "Main") {
                     return null
                 }
@@ -22,8 +25,9 @@ const ProjectNav = () => {
 };
 
 const ProjectNavCont = styled.div`
-    width: 73%;
+    width: 90%;
     margin: 7rem auto;
+    text-align: center;
 `
 
 export default ProjectNav;
