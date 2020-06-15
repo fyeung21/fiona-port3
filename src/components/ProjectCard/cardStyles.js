@@ -28,8 +28,6 @@ export const StyledImg = styled.img`
 export const StyledHover = styled.div`
     display: flex;
     flex-direction: column;
-    // justify-content: center;
-    // align-items: center;
     position: absolute;
     z-index: 2;
     left: 0;
@@ -37,7 +35,7 @@ export const StyledHover = styled.div`
     top: 0;
     bottom: 0;
     padding: 4rem;
-    background-color: rgba(75, 75, 75, 0.85);
+    background-color: rgba(250, 250, 250, 0.85);
     opacity: 0;
     transition: opacity 0.25s ease-in-out;
     border-radius: 5px;
@@ -50,14 +48,16 @@ export const StyledHover = styled.div`
 export const HoverTitle = styled.p`
     font-family: ${theme.headingFont};
     font-size: ${theme.h3FontSize};
-    color: ${theme.invertTxtColor};
+    color: ${theme.mainTxtColor};
+    font-weight: 500;
     margin: 0.5rem 0 1rem;
     text-transform: uppercase;
+    
 `
 export const HoverDesc = styled.p`
     font-family: ${theme.bodyFont};
     font-size: ${theme.bodyFontSize};
-    color: ${theme.invertTxtColor};
+    color: ${theme.mainTxtColor};
     margin: 0.5rem 0;
     line-height: 22px;
 `

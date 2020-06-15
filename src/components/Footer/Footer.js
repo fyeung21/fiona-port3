@@ -5,30 +5,32 @@ import { theme } from "../globalStyles";
 
 const Footer = () => {
     return (
-        <FooterCont>
-            <Text>Developed by Fiona &copy; 2020</Text>
-            <ContactCont>
-                <ContactLink
-                    className="fa fa-envelope"
-                    href="mailto:fyeung21@gmail.com?subject=Let's grab a coffee!"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                />
-
-                <ContactLink
-                    className="fa fa-linkedin"
-                    href="https://www.linkedin.com/in/fionaa-yeungg/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                />
-                <ContactLink
-                    className="fa fa-github"
-                    href="https://github.com/fyeung21"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                />
-            </ContactCont>
-        </FooterCont>
+        <>
+            <FooterCont>
+                <Text>Developed by Fiona &copy; 2020</Text>
+                <ContactCont>
+                    <ContactLink
+                        className="fa fa-envelope"
+                        href="mailto:fyeung21@gmail.com?subject=Let's grab a coffee!"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    />
+                    <ContactLink
+                        className="fa fa-linkedin"
+                        href="https://www.linkedin.com/in/fionaa-yeungg/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    />
+                    <ContactLink
+                        className="fa fa-github"
+                        href="https://github.com/fyeung21"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    />
+                </ContactCont>
+            </FooterCont>
+            <FootSpacer />
+        </>
     )
 }
 
@@ -45,11 +47,9 @@ const FooterCont = styled.div`
         margin: 0 3rem 3rem;
     }
 `
-
 const ContactCont = styled.div`
     display: flex;
 `
-
 const ContactLink = styled.a`
     font-size: ${theme.h3FontSize};
     color: ${theme.mainTxtColor};
@@ -71,12 +71,14 @@ const ContactLink = styled.a`
         transform: translateY(-8px);
         }
 `
-
 const Text = styled.p`
     font-family: ${theme.bodyFont};
     font-size: ${theme.bodyFontSize};
     color: ${theme.mainTxtColor};
     margin: 1rem 0
+`
+const FootSpacer = styled.div`
+    padding: 0 0.75rem 0.5rem;
 `
 
 export default Footer;

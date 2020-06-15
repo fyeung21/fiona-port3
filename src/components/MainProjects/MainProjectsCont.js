@@ -9,7 +9,7 @@ const ProjectsContainer = () => {
     const reverseList = projectsList.reverse()
 
     return (
-        <>
+        <SectionTopCont>
             <SectionHeading>projects</SectionHeading>
             <StyledGrid>
                 {reverseList.map(item => {
@@ -30,9 +30,13 @@ const ProjectsContainer = () => {
                 })}
             </StyledGrid>
             <Text>scroll right for more →</Text>
-        </>
+        </SectionTopCont>
     )
 }
+
+const SectionTopCont = styled.div`
+    margin: 5rem auto;
+`
 
 export const StyledGrid = styled.div`
     display: flex;
@@ -44,6 +48,7 @@ export const StyledGrid = styled.div`
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 5rem 1rem;
         overflow: visible;
+        padding: 0;
     }
     @media (min-width: 1400px) {
         grid-gap: 5rem 3rem;
