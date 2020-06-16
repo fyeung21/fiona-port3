@@ -12,6 +12,7 @@ export const theme = {
     h1FontSize: "44px",
     h2FontSize: "30px",
     h3FontSize: "24px",
+    h4FontSize: "20px",
     bodyFontSize: "18px",
     smallFontSize: "15px"
 }

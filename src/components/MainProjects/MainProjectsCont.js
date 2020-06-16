@@ -2,7 +2,7 @@ import React from "react";
 import ProjectCard from "../ProjectCard/ProjectCard";
 import styled from "styled-components";
 import projectsList from "../../assets/projectsList";
-import { theme, SectionHeading } from "../globalStyles";
+import { theme } from "../globalStyles";
 
 const ProjectsContainer = () => {
 
@@ -10,7 +10,6 @@ const ProjectsContainer = () => {
 
     return (
         <SectionTopCont>
-            <SectionHeading>projects</SectionHeading>
             <StyledGrid>
                 {reverseList.map(item => {
                     if (item.variant !== "Main") {

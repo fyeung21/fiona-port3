@@ -44,7 +44,7 @@ export const linkStyle = {
 }
 export const NavText = styled.p`
     font-family: ${theme.headingFont};
-    font-size: ${theme.bodyFontSize};
+    font-size: ${theme.h4FontSize};
     color: ${theme.mainTxtColor};
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -57,7 +57,7 @@ export const NavText = styled.p`
 `
 export const NavTextResume = styled.a`
     font-family: ${theme.headingFont};
-    font-size: ${theme.bodyFontSize};
+    font-size: ${theme.h4FontSize};
     color: black;
     text-decoration: none;
     padding: 0.75rem 1.25rem;
