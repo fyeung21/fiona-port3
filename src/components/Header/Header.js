@@ -19,7 +19,7 @@ const Header = () => {
                 <Link to="/about" style={linkStyle}>
                     <NavText>About</NavText>
                 </Link>
-                <NavTextResume href={Pdf} target="_blank">Resume</NavTextResume>
+                <NavTextResume href={Pdf} target="_blank" rel="noopener">Resume</NavTextResume>
             </MenuCont>
         </NavCont>
     )
