@@ -1,20 +1,20 @@
 import React from "react";
-import { Link } from "gatsby";
+// import { Link } from "gatsby";
 import { StyledCard, StyledImg } from './cardStyles';
 import HoverDetails from "./HoverDetails";
 
 const ProjectCard = (item) => {
 
     return (
-        <Link to="/project-details">
+        <a href={item.github} target="_blank">
             <StyledCard>
                 <StyledImg
                     src={item.img}
                     alt="project screenshot"
                 />
-                <HoverDetails title={item.title} desc={item.desc} />
+                <HoverDetails title={item.title} desc={item.desc} tags={item.tags} />
             </StyledCard>
-        </Link>
+        </a>
     );
 }
 

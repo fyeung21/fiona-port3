@@ -62,3 +62,16 @@ export const HoverDesc = styled.p`
     margin: 0.5rem 0;
     line-height: 22px;
 `
+export const StackList = styled.ul`
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 1rem 0;
+`
+export const StackItem = styled.li`
+    font-family: ${theme.bodyFont};
+    font-size: ${theme.bodyFontSize};
+    color: ${theme.mainTxtColor};
+    font-weight: 600;
+    margin: 0 1rem 0 0;    
+`
