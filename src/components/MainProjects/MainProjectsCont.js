@@ -56,7 +56,7 @@ export const StyledGrid = styled.div`
 `
 const Text = styled.p`
     font-family: ${theme.bodyFont};
-    font-size: 16px;
+    font-size: ${theme.bodyFontSize};
     color: ${theme.bodyTextColor};
     font-style: italic;
     text-align: center;

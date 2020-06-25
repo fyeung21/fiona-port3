@@ -5,6 +5,25 @@ export const StyledCard = styled.div`
     position: relative;
     margin: 0 2rem 0 0;
     width: 400px;
+    height: 480px;
+    border-radius: 5px;
+    box-shadow: 15px 15px 25px ${theme.shadowColor};
+    background-color: #fafafa;
+    @media (min-width: 768px) {
+        width: 550px;
+        height: 495px;
+    }
+    @media (min-width: 1200px) {
+        width: 550px;
+        height: 300px;
+        background-color: none;
+    }
+`
+
+export const StyledImgCont = styled.div`
+    position: relative;
+    margin: 0 2rem 0 0;
+    width: 400px;
     height: 275px;
     @media (min-width: 768px) {
         width: 550px;
@@ -24,28 +43,41 @@ export const StyledImg = styled.img`
     background-repeat: no-repeat;
     overflow: hidden;
     position: relative;
-    border-radius: 5px;
+    border-radius: 5px 5px 0 0;
     margin: 0 auto;
-    box-shadow: 15px 15px 25px ${theme.shadowColor};
+    @media (min-width: 1200px) {
+        border-radius: 5px;
+    }
+`
+
+export const MobileVer = styled.div`
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1rem;
+    @media (min-width: 1200px) {
+        display: none;
+    }
+`
+export const StyledLink = styled.a`
+    text-decoration: none;
 `
 
 export const StyledHover = styled.div`
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    z-index: 2;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    padding: 4rem;
-    background-color: rgba(250, 250, 250, 0.85);
-    opacity: 0;
-    transition: opacity 0.25s ease-in-out;
+    display: none;
     border-radius: 5px;
-    opacity: 1;
-    @media (min-width: 1025px) {
+    @media (min-width: 1200px) {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        z-index: 2;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        padding: 4rem;
+        background-color: rgba(250, 250, 250, 0.85);
         opacity: 0;
+        transition: opacity 0.25s ease-in-out;
         &:hover {
             opacity: 1;
         }
@@ -53,7 +85,7 @@ export const StyledHover = styled.div`
 `
 ////////////////
 
-export const HoverTitle = styled.p`
+export const CardTitle = styled.p`
     font-family: ${theme.headingFont};
     font-size: ${theme.h3FontSize};
     color: ${theme.mainTxtColor};
@@ -63,7 +95,7 @@ export const HoverTitle = styled.p`
     letter-spacing: 1px;
     
 `
-export const HoverDesc = styled.p`
+export const CardDesc = styled.p`
     font-family: ${theme.bodyFont};
     font-size: ${theme.bodyFontSize};
     color: ${theme.mainTxtColor};
