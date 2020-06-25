@@ -4,8 +4,12 @@ import { theme } from "../globalStyles";
 export const StyledCard = styled.div`
     position: relative;
     margin: 0 2rem 0 0;
-    width: 550px;
-    height: 300px;
+    width: 400px;
+    height: 275px;
+    @media (min-width: 768px) {
+        width: 550px;
+        height: 300px;
+    }
     @media (min-width: 1400px) {
         margin: 0;
     }
@@ -39,8 +43,12 @@ export const StyledHover = styled.div`
     opacity: 0;
     transition: opacity 0.25s ease-in-out;
     border-radius: 5px;
-    :hover {
-        opacity: 1;
+    opacity: 1;
+    @media (min-width: 1025px) {
+        opacity: 0;
+        &:hover {
+            opacity: 1;
+        }
     }  
 `
 ////////////////

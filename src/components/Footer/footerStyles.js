@@ -4,13 +4,14 @@ import { theme } from "../globalStyles";
 export const FooterCont = styled.div`
     display: flex; 
     justify-content: space-between; 
-    border-bottom: 2px solid lightgrey;
+    align-items: center;
     list-style: none;
-    margin: 0 0.75rem 3rem;
+    margin: 0 0.75rem;
     @media (min-width: 768px) {
-        margin: 0 2rem 3rem;
+        margin: 0 2rem 1rem;
     }
     @media (min-width: 1025px) {
+        border-bottom: 2px solid lightgrey;
         margin: 0 3rem 3rem;
     }
 `
@@ -42,7 +43,8 @@ export const Text = styled.p`
     font-family: ${theme.bodyFont};
     font-size: ${theme.bodyFontSize};
     color: ${theme.mainTxtColor};
-    margin: 1rem 0
+    line-height: 22px;
+    margin: 1rem 0;
 `
 export const FootSpacer = styled.div`
     padding: 0 0.75rem 0.5rem;
