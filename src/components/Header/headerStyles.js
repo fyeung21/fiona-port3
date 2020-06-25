@@ -30,18 +30,18 @@ export const NavCont = styled.div`
     justify-content: space-between;
     align-items: center;
     margin: 0 0.75rem;
-    @media (min-width: 768px) {
+    @media (min-width: ${theme.tabletSize}) {
         margin: 0 2rem;
     }
-    @media (min-width: 1025px) {
+    @media (min-width: ${theme.desktopSize}) {
         margin: 0 3rem;
     }
 `
 export const MenuCont = styled.div`
     display: flex;
     flex-direction: column;
-    @media (min-width: 768px) {
-        flex-direction:row;
+    @media (min-width: ${theme.tabletSize}) {
+        flex-direction: row;
     }
 `
 export const linkStyle = {
@@ -59,19 +59,20 @@ export const NavText = styled.p`
     &:hover {
         font-weight: 600;
     }
-    @media (min-width: 768px) {
+    @media (min-width: ${theme.tabletSize}) {
         padding: 0.75rem 1.25rem;
         &:hover {
             background-color: ${theme.accentColor};
             color: ${theme.invertTxtColor};
             border-radius: 5px;
+            font-weight: 400;
         }
     }
 `
 export const NavTextResume = styled.a`
     font-family: ${theme.headingFont};
     font-size: ${theme.h4FontSize};
-    color: black;
+    color: ${theme.mainTxtColor};
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -80,12 +81,13 @@ export const NavTextResume = styled.a`
     &:hover {
         font-weight: 600;
     }
-    @media (min-width: 768px) {
+    @media (min-width: ${theme.tabletSize}) {
         padding: 0.75rem 1.25rem;
         &:hover {
             background-color: ${theme.accentColor};
             color: ${theme.invertTxtColor};
             border-radius: 5px;
+            font-weight: 400;
         }
     }
 `

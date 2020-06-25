@@ -5,6 +5,7 @@ export const theme = {
     accentColor: "#9dabe3",
     shadowColor: "#B8B8B8",
     screenBkgColor: "#f8f8f8",
+    cardBkgColor: "#fafafa",
     mainTxtColor: "#000",
     invertTxtColor: "#fafafa",
     headingFont: `"Barlow Semi Condensed", Helvetica, sans-serif`,
@@ -14,7 +15,10 @@ export const theme = {
     h3FontSize: "24px",
     h4FontSize: "20px",
     bodyFontSize: "18px",
-    smallFontSize: "15px"
+    smallFontSize: "15px",
+    tabletSize: "768px",
+    desktopSize: "1200px",
+    widescreenSize: "1400px",
 }
 
 export const ScreenBkgCont = styled.div`
@@ -31,7 +35,13 @@ export const SectionHeading = styled.h1`
     letter-spacing: 1px;
     text-align: center;
     margin: 3rem 0;
-    @media (min-width: 1025px) {
-        // margin: 10rem 0 5rem 0;
+`
+export const Main = styled.div`
+    margin: 0 2rem;
+    @media (min-width: ${theme.tabletSize}) {
+      margin: 0 3.25rem;
+    }
+    @media (min-width: ${theme.desktopSize}) {
+      margin: 0 5rem;
     }
 `

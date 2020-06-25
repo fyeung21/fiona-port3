@@ -7,10 +7,10 @@ export const FooterCont = styled.div`
     align-items: center;
     list-style: none;
     margin: 0 0.75rem;
-    @media (min-width: 768px) {
+    @media (min-width: ${theme.tabletSize}) {
         margin: 0 2rem 1rem;
     }
-    @media (min-width: 1025px) {
+    @media (min-width: ${theme.desktopSize}) {
         border-bottom: 2px solid lightgrey;
         margin: 0 3rem 3rem;
     }
@@ -25,17 +25,12 @@ export const ContactLink = styled.a`
     margin: 0 0 0 3rem;
     display: inline-block;
     vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    -webkit-transition-duration: 0.3s;
+    transform: perspective(1px) translateZ(0);
     transition-duration: 0.3s;
-    -webkit-transition-property: transform;
     transition-property: transform;
-    -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
         &:hover {
-        -webkit-transform: translateY(-8px);
         transform: translateY(-8px);
         }
 `

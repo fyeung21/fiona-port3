@@ -1,6 +1,5 @@
 import React from "react";
-import styled from "styled-components";
-import { theme } from "../globalStyles";
+import { TextCont, Bio } from "./aboutStyles";
 
 const AboutBio = () => {
     return (
@@ -17,19 +16,5 @@ const AboutBio = () => {
         </TextCont>
     )
 }
-
-const TextCont = styled.div`
-    margin: 0 auto;
-    @media (min-width: 1025px) {
-        max-width: 80%;
-    }
-`
-const Bio = styled.p`
-    font-family: ${theme.bodyFont};
-    font-size: ${theme.bodyFontSize};
-    color: ${theme.mainTxtColor};
-    text-align: center;
-    line-height: 32px;
-`
 
 export default AboutBio;

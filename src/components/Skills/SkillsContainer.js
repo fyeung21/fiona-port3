@@ -1,14 +1,14 @@
 import React from "react";
 import SkillCard from "./SkillCard";
-import skillsList from "./skillsList";
-import styled from "styled-components";
+import skillsList from "../../assets/skillsList";
 import { SectionCont, SectionHeading } from "../globalStyles";
+import { SkillContFlex } from "./skillsStyles";
 
 const SkillsContainer = () => {
     return (
         <SectionCont>
             <SectionHeading>skills</SectionHeading>
-            <Flex>
+            <SkillContFlex>
                 {skillsList.map(item => {
                     return (
                         <SkillCard
@@ -17,18 +17,9 @@ const SkillsContainer = () => {
                             skills={item.skills} />
                     )
                 })}
-            </Flex>
+            </SkillContFlex>
         </SectionCont>
     )
 };
-
-const Flex = styled.div`
-    @media (min-width: 1025px) {
-        display: flex;
-        justify-content: space-between;
-        align-items: top;
-    }
-`
-
 
 export default SkillsContainer

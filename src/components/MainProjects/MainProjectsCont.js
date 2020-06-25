@@ -42,14 +42,15 @@ export const StyledGrid = styled.div`
     overflow-x: scroll;
     margin: 0 0 1rem 0;
     padding: 1rem 0 4rem 0;
-    @media (min-width: 1200px) {
+    width: 100%;
+    @media (min-width: ${theme.desktopSize}) {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 5rem 1rem;
         overflow: visible;
         padding: 0;
     }
-    @media (min-width: 1400px) {
+    @media (min-width: ${theme.widescreenSize}) {
         grid-gap: 5rem 3rem;
         margin: 4rem auto;
     }
@@ -62,7 +63,7 @@ const Text = styled.p`
     text-align: center;
     margin: 0 0 6rem 0;
 
-    @media (min-width: 1200px) {
+    @media (min-width: ${theme.widescreenSize}) {
         display:none;
     }
 `

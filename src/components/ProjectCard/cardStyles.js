@@ -8,15 +8,16 @@ export const StyledCard = styled.div`
     height: 480px;
     border-radius: 5px;
     box-shadow: 15px 15px 25px ${theme.shadowColor};
-    background-color: #fafafa;
-    @media (min-width: 768px) {
+    background-color: ${theme.cardBkgColor};
+    @media (min-width: ${theme.tabletSize}) {
         width: 550px;
         height: 495px;
     }
-    @media (min-width: 1200px) {
+    @media (min-width: ${theme.desktopSize}) {
         width: 550px;
         height: 300px;
         background-color: none;
+        margin: 0 auto;
     }
 `
 
@@ -25,11 +26,11 @@ export const StyledImgCont = styled.div`
     margin: 0 2rem 0 0;
     width: 400px;
     height: 275px;
-    @media (min-width: 768px) {
+    @media (min-width: ${theme.tabletSize}) {
         width: 550px;
         height: 300px;
     }
-    @media (min-width: 1400px) {
+    @media (min-width: ${theme.widescreenSize}) {
         margin: 0;
     }
 `
@@ -45,7 +46,7 @@ export const StyledImg = styled.img`
     position: relative;
     border-radius: 5px 5px 0 0;
     margin: 0 auto;
-    @media (min-width: 1200px) {
+    @media (min-width: ${theme.desktopSize}) {
         border-radius: 5px;
     }
 `
@@ -54,7 +55,7 @@ export const MobileVer = styled.div`
     display: flex;
     flex-direction: column;
     padding: 2rem 1rem;
-    @media (min-width: 1200px) {
+    @media (min-width: ${theme.desktopSize}) {
         display: none;
     }
 `
@@ -65,7 +66,7 @@ export const StyledLink = styled.a`
 export const StyledHover = styled.div`
     display: none;
     border-radius: 5px;
-    @media (min-width: 1200px) {
+    @media (min-width: ${theme.desktopSize}) {
         display: flex;
         flex-direction: column;
         position: absolute;
