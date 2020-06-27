@@ -63,7 +63,7 @@ const Text = styled.p`
     text-align: center;
     margin: 0 0 6rem 0;
 
-    @media (min-width: ${theme.widescreenSize}) {
+    @media (min-width: ${theme.desktopSize}) {
         display:none;
     }
 `
