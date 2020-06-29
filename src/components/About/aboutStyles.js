@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { theme } from "../globalStyles";
+import { theme } from "../Theme";
 
 
 export const AboutSection = styled.div`
@@ -20,7 +20,7 @@ export const TextCont = styled.div`
 export const Bio = styled.p`
     font-family: ${theme.bodyFont};
     font-size: ${theme.bodyFontSize};
-    color: ${theme.mainTxtColor};
+    color: ${({ theme }) => theme.mainTxtColor};
     text-align: left;
     line-height: 32px;
     @media (min-width: ${theme.tabletSize}) {

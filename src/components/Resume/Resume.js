@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { theme } from "../globalStyles";
+import { theme } from "../Theme";
 import Pdf from "../../assets/FionaYeung-Resume.pdf";
 
 const Resume = () => {
@@ -19,15 +19,14 @@ const StyledBtn = styled.div`
 const Text = styled.a`
     font-family: ${theme.bodyFont};
     font-size: ${theme.h2FontSize};
-    color: ${theme.mainTxtColor};
-    border: 5px solid ${theme.accentColor};
+    color: ${({ theme }) => theme.mainTxtColor};
+    border: 5px solid ${({ theme }) => theme.accentColor};
     border-radius: 10px;
     padding: 5px 10px;
     margin: 2rem 0;
     text-decoration: none;
-    color: #000;
     &:hover {
-        background-color: ${theme.accentColor};
+        background-color: ${({ theme }) => theme.accentColor};
     }
 `
 

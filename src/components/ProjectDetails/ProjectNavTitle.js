@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { theme } from "../globalStyles";
+import { theme } from "../Theme";
 
 const ProjectNavTitle = (item) => {
     return (
@@ -13,7 +13,7 @@ const ProjectNavTitle = (item) => {
 const Title = styled.a`
     font-family: ${theme.headingFont};
     font-size: ${theme.h3FontSize};
-    color: ${theme.mainTxtColor};
+    color: ${({ theme }) => theme.mainTxtColor};
     font-weight: 500;
     text-decoration: none;
     text-transform: uppercase;
@@ -23,8 +23,8 @@ const Title = styled.a`
     padding: 0.75rem 1.25rem;
     margin: 0.75rem;
     &:hover {
-        background-color: ${theme.accentColor};
-        color: ${theme.invertTxtColor};
+        background-color: ${({ theme }) => theme.accentColor};
+        color: ${({ theme }) => theme.invertTxtColor};
         cursor: pointer;
     }
 `

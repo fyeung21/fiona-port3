@@ -2,7 +2,7 @@ import React from "react";
 import ProjectCard from "../ProjectCard/ProjectCard";
 import styled from "styled-components";
 import projectsList from "../../assets/projectsList";
-import { theme } from "../globalStyles";
+import { theme } from "../Theme";
 
 const ProjectsContainer = () => {
 
@@ -58,7 +58,7 @@ export const StyledGrid = styled.div`
 const Text = styled.p`
     font-family: ${theme.bodyFont};
     font-size: ${theme.bodyFontSize};
-    color: ${theme.bodyTextColor};
+    color: ${({ theme }) => theme.mainTxtColor};
     font-style: italic;
     text-align: center;
     margin: 0 0 6rem 0;

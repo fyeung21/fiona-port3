@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import styled from "styled-components";
-import { theme } from "../globalStyles";
+import { theme } from "../Theme";
 
 const NotFound = () => {
     return (
@@ -15,14 +15,14 @@ const NotFound = () => {
 const Text404 = styled.h2`
     font-family: ${theme.headingFont};
     font-size: ${theme.h2FontSize};
-    color: ${theme.mainTxtColor};
+    color: ${({ theme }) => theme.mainTxtColor};
     text-align: left;
 `
 
 const Body404 = styled.p`
     font-family: ${theme.bodyFont};
     font-size: ${theme.bodyFontSize};
-    color: ${theme.mainTxtColor};
+    color: ${({ theme }) => theme.mainTxtColor};
     text-align: left;
     margin: 2rem auto;
 `

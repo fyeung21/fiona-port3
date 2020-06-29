@@ -3,18 +3,28 @@ import './reset.css'
 import "../assets/fonts.css"
 import Header from "./Header/Header"
 import Footer from "./Footer/Footer"
-import styled from "styled-components";
-import { ScreenBkgCont, Main } from "./globalStyles"
+import { Main, GlobalStyles } from "./globalStyles"
+
+import { ThemeProvider } from "styled-components";
+import { useDarkMode } from "../components/hooks/useDarkMode";
+import Toggle from "../components/Header/Toggler";
+import { lightTheme, darkTheme } from "./Theme";
 
 const Layout = ({ children }) => {
+  const [theme, themeToggler] = useDarkMode();
+
+  const themeMode = theme === 'light' ? lightTheme : darkTheme;
+
   return (
-    <ScreenBkgCont>
+    <ThemeProvider theme={themeMode}>
+      <GlobalStyles />
       <Header />
       <Main>
+        <Toggle theme={theme} toggleTheme={themeToggler} />
         {children}
       </Main>
       <Footer />
-    </ScreenBkgCont>
+    </ThemeProvider>
   )
 }
 

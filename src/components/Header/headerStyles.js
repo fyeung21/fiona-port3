@@ -1,10 +1,10 @@
 import styled from "styled-components";
-import { theme } from "../globalStyles";
+import { theme } from "../Theme";
 
 export const HomeIcon = styled.p`
     font-family: ${theme.bodyFont};
     font-size: ${theme.h2FontSize};
-    color: ${theme.mainTxtColor};
+    color: ${({ theme }) => theme.mainTxtColor};
     margin: 1rem 0.25rem 0;
     text-transform: uppercase;
     font-weight: 400;
@@ -13,7 +13,7 @@ export const HomeIcon = styled.p`
 export const Title = styled.p`
     font-family: ${theme.bodyFont};
     font-size: ${theme.bodyFontSize};
-    color: ${theme.accentColor};
+    color: ${({ theme }) => theme.accentColor};
     margin: 0.5rem 0.25rem 1rem;
     font-weight: 400;
     letter-spacing: 1px;
@@ -45,13 +45,13 @@ export const MenuCont = styled.div`
     }
 `
 export const linkStyle = {
-    textDecoration: "none",
-    color: "black"
+    textDecoration: "none"
 }
+
 export const NavText = styled.p`
     font-family: ${theme.headingFont};
     font-size: ${theme.h4FontSize};
-    color: ${theme.mainTxtColor};
+    color: ${({ theme }) => theme.mainTxtColor};
     text-transform: uppercase;
     letter-spacing: 1px;
     text-align: right;
@@ -62,8 +62,8 @@ export const NavText = styled.p`
     @media (min-width: ${theme.tabletSize}) {
         padding: 0.75rem 1.25rem;
         &:hover {
-            background-color: ${theme.accentColor};
-            color: ${theme.invertTxtColor};
+            background-color: ${({ theme }) => theme.accentColor};
+            color: ${({ theme }) => theme.invertTxtColor};
             border-radius: 5px;
             font-weight: 400;
         }
@@ -72,7 +72,7 @@ export const NavText = styled.p`
 export const NavTextResume = styled.a`
     font-family: ${theme.headingFont};
     font-size: ${theme.h4FontSize};
-    color: ${theme.mainTxtColor};
+    color: ${({ theme }) => theme.mainTxtColor};
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -84,8 +84,8 @@ export const NavTextResume = styled.a`
     @media (min-width: ${theme.tabletSize}) {
         padding: 0.75rem 1.25rem;
         &:hover {
-            background-color: ${theme.accentColor};
-            color: ${theme.invertTxtColor};
+            background-color: ${({ theme }) => theme.accentColor};
+            color: ${({ theme }) => theme.invertTxtColor};
             border-radius: 5px;
             font-weight: 400;
         }

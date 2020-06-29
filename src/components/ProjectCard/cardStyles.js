@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { theme } from "../globalStyles";
+import { theme } from "../Theme";
 
 export const StyledCard = styled.div`
     position: relative;
@@ -7,8 +7,8 @@ export const StyledCard = styled.div`
     width: 400px;
     height: 480px;
     border-radius: 5px;
-    box-shadow: 15px 15px 25px ${theme.shadowColor};
-    background-color: ${theme.cardBkgColor};
+    box-shadow: 15px 15px 25px ${({ theme }) => theme.shadowColor};
+    background-color: ${({ theme }) => theme.cardBkgColor};
     @media (min-width: ${theme.tabletSize}) {
         width: 550px;
         height: 495px;
@@ -89,7 +89,7 @@ export const StyledHover = styled.div`
 export const CardTitle = styled.p`
     font-family: ${theme.headingFont};
     font-size: ${theme.h3FontSize};
-    color: ${theme.mainTxtColor};
+    color: ${({ theme }) => theme.mainTxtColor};
     font-weight: 500;
     margin: 0.5rem 0 1rem;
     text-transform: uppercase;
@@ -99,7 +99,7 @@ export const CardTitle = styled.p`
 export const CardDesc = styled.p`
     font-family: ${theme.bodyFont};
     font-size: ${theme.bodyFontSize};
-    color: ${theme.mainTxtColor};
+    color: ${({ theme }) => theme.mainTxtColor};
     margin: 0.5rem 0;
     line-height: 22px;
 `
@@ -112,7 +112,7 @@ export const StackList = styled.ul`
 export const StackItem = styled.li`
     font-family: ${theme.bodyFont};
     font-size: ${theme.bodyFontSize};
-    color: ${theme.mainTxtColor};
+    color: ${({ theme }) => theme.mainTxtColor};
     font-weight: 600;
     margin: 0 1rem 0 0;    
 `

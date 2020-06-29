@@ -1,7 +1,7 @@
 import React from "react";
 import ProjectCard from "../ProjectCard/ProjectCard";
 import styled from "styled-components";
-import { theme } from "../globalStyles";
+import { theme } from "../Theme";
 import { Link } from "gatsby";
 import projectsList from "../../assets/projectsList";
 import { StyledGrid } from "../MainProjects/MainProjectsCont";
@@ -39,24 +39,24 @@ const MoreProjectsCont = () => {
 const SectionTitle = styled.p`
     font-family: ${theme.bodyFont};
     font-size: ${theme.bodyFontSize};
-    color: ${theme.bodyTextColor};
+    color: ${({ theme }) => theme.mainTxtColor};
 `
 
 const linkStyle = {
     textDecoration: "none",
-    color: "black"
+    color: "#000"
 }
 
 const NavText = styled.p`
     font-family: ${theme.bodyFont};
     font-size: ${theme.bodyFontSize};
     font-style: italic;
-    color: ${theme.bodyTextColor};
+    color: ${({ theme }) => theme.mainTxtColor};
     margin: 1rem 5px;
     text-transform: capitalize;
     width:5%;
     &:hover {
-        background-color: ${theme.accentColor};
+        background-color: ${({ theme }) => theme.accentColor};
     }
 `
 

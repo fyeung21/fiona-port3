@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "gatsby";
 import { NavCont, Flex, HomeIcon, Title, MenuCont, NavText, NavTextResume, linkStyle } from "./headerStyles";
 import Pdf from "../../assets/FionaYeung-Resume.pdf";
 
 const Header = () => {
+
     return (
+
         <NavCont>
             <Link to="/" style={linkStyle}>
                 <Flex>
@@ -19,7 +21,7 @@ const Header = () => {
                 <Link to="/about" style={linkStyle}>
                     <NavText>About</NavText>
                 </Link>
-                <NavTextResume href={Pdf} target="_blank" rel="noopener">Resume</NavTextResume>
+                <NavTextResume href={Pdf} target="_blank" rel="noopener noreferrer">Resume</NavTextResume>
             </MenuCont>
         </NavCont>
     )

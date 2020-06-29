@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { theme } from "../globalStyles";
+import { theme } from "../Theme";
 
 export const MainDetailsCont = styled.div`
     margin: 3rem auto;
@@ -11,7 +11,7 @@ export const BriefCont = styled.div`
 export const ProjectTitle = styled.p`
     font-family: ${theme.headingFont};
     font-size: ${theme.h1FontSize};
-    color: ${theme.bodyTextColor};
+    color: ${({ theme }) => theme.mainTxtColor};
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -20,7 +20,7 @@ export const ProjectTitle = styled.p`
 export const BriefType = styled.p`
     font-family: ${theme.headingFont};
     font-size: ${theme.h3FontSize};
-    color: ${theme.bodyTextColor};
+    color: ${({ theme }) => theme.mainTxtColor};
     font-weight: 500;
     text-transform: capitalize;
     margin: 1rem 0;
@@ -42,7 +42,7 @@ export const DetailsFlex = styled.div`
 export const StatType = styled.p`
     font-family: ${theme.headingFont};
     font-size: ${theme.h3FontSize};
-    color: ${theme.mainTxtColor};
+    color: ${({ theme }) => theme.mainTxtColor};
     font-weight: 500;
     text-transform: capitalize;
     margin: 0 1rem 0 0;
@@ -50,15 +50,15 @@ export const StatType = styled.p`
 export const Txt = styled.p`
     font-family: ${theme.bodyFont};
     font-size: ${theme.bodyFontSize};
-    color: ${theme.mainTxtColor};
+    color: ${({ theme }) => theme.mainTxtColor};
     line-height: 22px;
 `
 export const TxtLink = styled.a`
     font-family: ${theme.bodyFont};
     font-size: ${theme.bodyFontSize};
-    color: ${theme.accentColor};
+    color: ${({ theme }) => theme.accentColor};
     text-transform: capitalize;
     :hover {
-        color: #7589D8
+        color: ${({ theme }) => theme.hoverOnAccentColor};
     }
 `

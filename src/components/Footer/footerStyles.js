@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { theme } from "../globalStyles";
+import { theme } from "../Theme";
 
 export const FooterCont = styled.div`
     display: flex; 
@@ -20,7 +20,7 @@ export const ContactCont = styled.div`
 `
 export const ContactLink = styled.a`
     font-size: ${theme.h3FontSize};
-    color: ${theme.mainTxtColor};
+    color: ${({ theme }) => theme.mainTxtColor};
     text-decoration: none;
     margin: 0 0 0 3rem;
     display: inline-block;
@@ -37,7 +37,7 @@ export const ContactLink = styled.a`
 export const Text = styled.p`
     font-family: ${theme.bodyFont};
     font-size: ${theme.bodyFontSize};
-    color: ${theme.mainTxtColor};
+    color: ${({ theme }) => theme.mainTxtColor};
     line-height: 22px;
     margin: 1rem 0;
 `

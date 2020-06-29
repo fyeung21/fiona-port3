@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components";
-import { theme } from "../globalStyles";
+import { theme } from "../Theme";
 
 const Hero = () => {
     return (
@@ -28,14 +28,14 @@ const BorderBox = styled.div`
 const Name = styled.h1`
     font-family: ${theme.headingFont};
     font-size: ${theme.h2FontSize};
-    color: ${theme.mainTxtColor};
+    color: ${({ theme }) => theme.mainTxtColor};
     margin: 0.5rem 0;
 `
 
 const Title = styled.h3`
     font-family: ${theme.bodyFont};
     font-size: ${theme.h3FontSize};
-    color: ${theme.mainTxtColor};
+    color: ${({ theme }) => theme.mainTxtColor};
 `
 
 export default Hero

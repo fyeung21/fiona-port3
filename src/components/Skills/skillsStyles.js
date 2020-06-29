@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { theme } from "../globalStyles";
+import { theme } from "../Theme";
 
 
 export const SkillContFlex = styled.div`
@@ -17,12 +17,12 @@ export const SkillContFlex = styled.div`
 //////////////////
 
 export const SkillCardCont = styled.div`
-    border-bottom: 2px solid lightgrey;
+    border-bottom: 2px solid ${({ theme }) => theme.borderColor};
     padding: 2.5rem 0;
     @media (min-width: ${theme.desktopSize}) {
         padding: 1rem 2rem;
         height: 300px;
-        border-left: 2px solid lightgrey;
+        border-left: 2px solid ${({ theme }) => theme.borderColor};
         border-bottom: none;
     }
 `
@@ -30,7 +30,7 @@ export const SkillCardCont = styled.div`
 export const Category = styled.h2`
     font-family: ${theme.headingFont};
     font-size: ${theme.h2FontSize};
-    color: ${theme.mainTxtColor};
+    color: ${({ theme }) => theme.mainTxtColor};
     line-height: 38px;
 `
 export const SkillListFlex = styled.div`
@@ -45,7 +45,7 @@ export const SingleSkill = styled.p`
     font-family: ${theme.bodyFont};
     font-size: ${theme.bodyFontSize};
     font-style: italic;
-    color: ${theme.mainTxtColor};
+    color: ${({ theme }) => theme.mainTxtColor};
     margin: 1rem 1rem 0 0;
     @media (min-width: ${theme.desktopSize}) {
         font-style: normal;
