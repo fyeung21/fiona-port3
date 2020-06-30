@@ -5,6 +5,10 @@ export const MainDetailsCont = styled.div`
     margin: 3rem auto;
     width:70%;
 `
+
+/////////////  Details 
+
+
 export const BriefCont = styled.div`
     margin: 1rem;
 `
@@ -61,4 +65,41 @@ export const TxtLink = styled.a`
     :hover {
         color: ${({ theme }) => theme.hoverOnAccentColor};
     }
+`
+
+///////////////  Project Nav
+
+export const ProjectNavCont = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 7rem auto;
+    text-align: center;
+`
+export const NavTitleCont = styled.div`
+    display: flex;
+    align-items: center;
+`
+export const Title = styled.a`
+    font-family: ${theme.headingFont};
+    font-size: ${theme.h3FontSize};
+    color: ${({ theme }) => theme.mainTxtColor};
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    line-height: 60px;
+    letter-spacing: 1px;
+    padding: 0 1.25rem;
+    margin: 0.75rem;
+    &:hover {
+        background-color: ${({ theme }) => theme.accentColor};
+        color: ${({ theme }) => theme.invertTxtColor};
+        cursor: pointer;
+    }
+`
+export const Spacer = styled.p`
+    font-family: ${theme.headingFont};
+    font-size: ${theme.h2FontSize};
+    color: ${({ theme }) => theme.mainTxtColor}; 
 `
