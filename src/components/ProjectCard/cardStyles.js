@@ -76,7 +76,7 @@ export const StyledHover = styled.div`
         top: 0;
         bottom: 0;
         padding: 4rem;
-        background-color: rgba(250, 250, 250, 0.85);
+        background-color: ${({ theme }) => theme.cardHoverColor};
         opacity: 0;
         transition: opacity 0.25s ease-in-out;
         &:hover {

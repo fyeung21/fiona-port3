@@ -5,6 +5,7 @@ export const lightTheme = {
     mainTxtColor: "#000",
     invertTxtColor: "#fafafa",
     shadowColor: "#B8B8B8",
+    cardHoverColor: "rgba(250, 250, 250, 0.85)",
     cardBkgColor: "#fafafa",
     borderColor: "lightgrey",
     hoverOnAccentColor: "#7589D8"
@@ -16,6 +17,7 @@ export const darkTheme = {
     mainTxtColor: "#fafafa",
     invertTxtColor: "#000",
     shadowColor: "#9dabe3",
+    cardHoverColor: "rgba(0, 0, 0, 0.80)",
     cardBkgColor: "#333333",
     borderColor: "#f8f8f8",
     hoverOnAccentColor: "#7589D8"
