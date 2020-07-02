@@ -7,10 +7,22 @@ const NotFound = () => {
     return (
         <NotFoundCont>
             <Text404>NOT FOUND</Text404>
-            <Body404>This route doesn&#39;t exist... It&#39;s time to go back <Link to="/">home</Link>.</Body404>
+            <Body404>This route doesn&#39;t exist... It&#39;s time to go back
+                <Link to="/">
+                    <Txt>home</Txt>
+                </Link>
+                    .</Body404>
         </NotFoundCont>
     )
 }
+
+const Txt = styled.p`
+    color: ${({ theme }) => theme.mainTxtColor};
+    margin: 0 0 0 5px;
+    &:hover {
+        font-weight: 600;
+    }
+`
 
 const Text404 = styled.h2`
     font-family: ${theme.headingFont};
@@ -20,6 +32,7 @@ const Text404 = styled.h2`
 `
 
 const Body404 = styled.p`
+    display:flex;
     font-family: ${theme.bodyFont};
     font-size: ${theme.bodyFontSize};
     color: ${({ theme }) => theme.mainTxtColor};
