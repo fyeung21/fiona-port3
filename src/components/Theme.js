@@ -8,6 +8,7 @@ export const lightTheme = {
     cardHoverColor: "rgba(250, 250, 250, 0.85)",
     cardBkgColor: "#fafafa",
     borderColor: "lightgrey",
+    toggleBorder: "#f8f8f8",
     hoverOnAccentColor: "#7589D8"
 }
 
@@ -20,6 +21,7 @@ export const darkTheme = {
     cardHoverColor: "rgba(0, 0, 0, 0.80)",
     cardBkgColor: "#333333",
     borderColor: "#f8f8f8",
+    toggleBorder: "#121212",
     hoverOnAccentColor: "#7589D8"
 }
 

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "gatsby";
 import { NavCont, Flex, HomeIcon, Title, MenuCont, NavText, NavTextResume, linkStyle } from "./headerStyles";
 import Pdf from "../../assets/FionaYeung-Resume.pdf";
@@ -6,7 +6,6 @@ import Pdf from "../../assets/FionaYeung-Resume.pdf";
 const Header = () => {
 
     return (
-
         <NavCont>
             <Link to="/" style={linkStyle}>
                 <Flex>

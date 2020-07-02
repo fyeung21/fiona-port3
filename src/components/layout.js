@@ -1,16 +1,21 @@
 import React from "react"
 import './reset.css'
 import "../assets/fonts.css"
-import Header from "./Header/Header"
+// import Header from "./Header/Header"
 import Footer from "./Footer/Footer"
 import { Main, GlobalStyles } from "./globalStyles"
 
+import LogoTemp from "./Header/HeaderTemp/LogoTemp";
+import NavTemp from "./Header/HeaderTemp/NavTemp";
+import { NavCont, MenuCont } from "./Header/headerStyles";
+
 import { ThemeProvider } from "styled-components";
 import { useDarkMode } from "../components/hooks/useDarkMode";
-import Toggle from "../components/Header/Toggler";
 import { lightTheme, darkTheme } from "./Theme";
+import Toggle from "../components/Header/Toggler";
 
 const Layout = ({ children }) => {
+
   const [theme, themeToggler] = useDarkMode();
 
   const themeMode = theme === 'light' ? lightTheme : darkTheme;
@@ -18,9 +23,15 @@ const Layout = ({ children }) => {
   return (
     <ThemeProvider theme={themeMode}>
       <GlobalStyles />
-      <Header />
+      {/* <Header /> */}
+      <NavCont>
+        <LogoTemp />
+        <MenuCont>
+          <NavTemp />
+          <Toggle theme={theme} toggleTheme={themeToggler} />
+        </MenuCont>
+      </NavCont>
       <Main>
-        <Toggle theme={theme} toggleTheme={themeToggler} />
         {children}
       </Main>
       <Footer />

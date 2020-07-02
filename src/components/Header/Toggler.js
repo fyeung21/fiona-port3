@@ -1,35 +1,23 @@
 import React from 'react'
 import { func, string } from 'prop-types';
-import styled from "styled-components"
+import styled from "styled-components";
 
 const Button = styled.button`
-  
-  border: 2px solid ${({ theme }) => theme.toggleBorder};
-  border-radius: 30px;
-  cursor: pointer;
-  font-size: 0.5rem;
-  justify-content: space-between;
-  margin: 0 auto;
-  overflow: hidden;
-  padding: 0.5rem;
-  position: relative;
-  width: 8rem;
-  height: 4rem;
-  outline: none;
-  }
-
-`;
+    border: 1px solid ${({ theme }) => theme.toggleBorder};
+    border-radius: 5px;
+    background-color: ${({ theme }) => theme.body};
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    outline: none;
+`
 
 const Sun = styled.svg`
- height: auto;
- width: 2.5rem;
- transition: all 0.7s linear;
-`;
+    width: 2rem;
+`
 
 const Moon = styled.svg`
-  height: auto;
-  width: 2.5rem;
-  transition: all 0.7s linear;
+    width: 2rem;
 `
 
 const Toggle = ({ theme, toggleTheme }) => {
