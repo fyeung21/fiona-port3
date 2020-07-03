@@ -7,7 +7,7 @@ export const StyledCard = styled.div`
     width: 400px;
     height: 480px;
     border-radius: 5px;
-    box-shadow: 15px 15px 25px ${({ theme }) => theme.shadowColor};
+    box-shadow: ${({ theme }) => theme.cardShadow};
     background-color: ${({ theme }) => theme.cardBkgColor};
     @media (min-width: ${theme.tabletSize}) {
         width: 550px;
@@ -46,6 +46,7 @@ export const StyledImg = styled.img`
     position: relative;
     border-radius: 5px 5px 0 0;
     margin: 0 auto;
+    filter: brightness(${({ theme }) => theme.imgBrightness});
     @media (min-width: ${theme.desktopSize}) {
         border-radius: 5px;
     }

@@ -11,7 +11,7 @@ export const FooterCont = styled.div`
         margin: 0 2rem 1rem;
     }
     @media (min-width: ${theme.desktopSize}) {
-        border-bottom: 2px solid lightgrey;
+        border-bottom: 2px solid ${({ theme }) => theme.borderColor};
         margin: 0 3rem 3rem;
     }
 `
