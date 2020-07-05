@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { theme } from "../Theme";
-import Pdf from "../../assets/FionaYeung-Resume.pdf";
+import Pdf from "../../assets/FionaYeung-Resume2020.pdf";
 
 const Resume = () => {
     return (

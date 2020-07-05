@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
-import { NavCont, Flex, HomeIcon, Title, MenuCont, NavText, NavTextResume, linkStyle } from "../headerStyles";
-import Pdf from "../../../assets/FionaYeung-Resume.pdf";
+import { MenuCont, NavText, NavTextResume, linkStyle } from "../headerStyles";
+import Pdf from "../../../assets/FionaYeung-Resume2020.pdf";
 
 const NavTemp = () => {
     return (
