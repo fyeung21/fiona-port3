@@ -6,7 +6,7 @@ import Pdf from "../../assets/FionaYeung-Resume2020.pdf";
 const Resume = () => {
     return (
         <StyledBtn>
-            <Text href={Pdf} target="_blank">Resume</Text>
+            <Text href={Pdf} target="_blank" rel="noopener noreferrer">Resume</Text>
         </StyledBtn>
     )
 }

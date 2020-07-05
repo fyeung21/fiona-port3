@@ -5,7 +5,7 @@ const ProjectNavTitle = (item) => {
     return (
         <NavTitleCont>
             <Title>{item.title}</Title>
-            <Spacer>//</Spacer>
+            <Spacer>{"//"}</Spacer>
         </NavTitleCont>
     );
 };

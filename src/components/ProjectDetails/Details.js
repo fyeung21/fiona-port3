@@ -35,7 +35,7 @@ const Details = () => {
                     </DetailsFlex>
                     <DetailsFlex>
                         <StatType>source:</StatType>
-                        <TxtLink href="https://github.com/fyeung21" target="_blank" rel="noopener">link</TxtLink>
+                        <TxtLink href="https://github.com/fyeung21" target="_blank" rel="noopener noreferrer">link</TxtLink>
                     </DetailsFlex>
                     <DetailsFlex>
                         <StatType>technologies:</StatType>
