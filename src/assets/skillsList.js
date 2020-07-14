@@ -3,12 +3,12 @@ const skillsList = [
     {
         id: 0,
         title: "Front-end",
-        skills: ["HTML", "CSS", "Sass", "PHP", "JavaScript", "jQuery", "React", "Styled Components"]
+        skills: ["HTML", "CSS", "Sass", "JavaScript", "jQuery", "React", "Styled Components"]
     },
     {
         id: 1,
         title: "Back-end",
-        skills: ["Apollo Client", "Meteor", "GraphQL", "PostgreSQL", "MongoDB"]
+        skills: ["NodeJS", "PHP", "PostgreSQL", "GraphQL", "Apollo Client", "MongoDB", "Meteor",]
     },
     {
         id: 2,
@@ -18,7 +18,7 @@ const skillsList = [
     {
         id: 3,
         title: "Tools and Systems",
-        skills: ["Git & Github", "Jest", "Wordpress"]
+        skills: ["Git & Github", "Wordpress", "Jest"]
     }
 ];
 

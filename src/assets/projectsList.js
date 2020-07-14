@@ -26,7 +26,7 @@ const projectsList = [
         role: "Developer",
         url: "https://fyeung21.github.io/pong-project/",
         github: "https://github.com/fyeung21/pong-project",
-        tags: ["JS", "Node"],
+        tags: ["JS", "NodeJS"],
         variant: "Main"
     },
     {
