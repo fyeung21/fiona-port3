@@ -91,7 +91,7 @@ export const CardTitle = styled.p`
     font-family: ${theme.headingFont};
     font-size: ${theme.h3FontSize};
     color: ${({ theme }) => theme.mainTxtColor};
-    font-weight: 500;
+    font-weight: 400;
     margin: 0.5rem 0 1rem;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -101,6 +101,7 @@ export const CardDesc = styled.p`
     font-family: ${theme.bodyFont};
     font-size: ${theme.bodyFontSize};
     color: ${({ theme }) => theme.mainTxtColor};
+    font-weight: 300;
     margin: 0.5rem 0;
     line-height: 22px;
 `
@@ -114,6 +115,6 @@ export const StackItem = styled.li`
     font-family: ${theme.bodyFont};
     font-size: ${theme.bodyFontSize};
     color: ${({ theme }) => theme.mainTxtColor};
-    font-weight: 600;
+    font-weight: 400;
     margin: 0 1rem 0 0;    
 `

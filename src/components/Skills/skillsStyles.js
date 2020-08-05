@@ -44,7 +44,6 @@ export const SkillListFlex = styled.div`
 export const SingleSkill = styled.p`
     font-family: ${theme.bodyFont};
     font-size: ${theme.bodyFontSize};
-    font-style: italic;
     color: ${({ theme }) => theme.mainTxtColor};
     margin: 1rem 1rem 0 0;
     @media (min-width: ${theme.desktopSize}) {

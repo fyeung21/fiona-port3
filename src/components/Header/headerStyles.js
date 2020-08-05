@@ -7,7 +7,7 @@ export const HomeIcon = styled.p`
     color: ${({ theme }) => theme.mainTxtColor};
     margin: 1rem 0.25rem 0;
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: 1px;
 `
 export const Title = styled.p`

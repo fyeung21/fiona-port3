@@ -21,7 +21,7 @@ export const SectionHeading = styled.h1`
     margin: 3rem 0;
 `
 export const Main = styled.div`
-    margin: 0 2rem;
+    // margin: 0 2rem;
     @media (min-width: ${theme.tabletSize}) {
       margin: 0 3.25rem;
     }

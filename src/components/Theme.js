@@ -28,8 +28,8 @@ export const darkTheme = {
 }
 
 export const theme = {
-    headingFont: `"Barlow Semi Condensed", Helvetica, sans-serif`,
-    bodyFont: `"Open sans", Helvetica, sans-serif`,
+    headingFont: `"Poppins", Helvetica, sans-serif`,
+    bodyFont: `"Roboto", Helvetica, sans-serif`,
     h1FontSize: "44px",
     h2FontSize: "30px",
     h3FontSize: "24px",
