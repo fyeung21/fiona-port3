@@ -9,7 +9,6 @@ export const SkillContFlex = styled.div`
         align-items: top;
     }
     @media (min-width: ${theme.widescreenSize}) {
-        width: 90%;
         margin: 0 auto;
     }
 `

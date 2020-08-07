@@ -6,13 +6,13 @@ export const FooterCont = styled.div`
     justify-content: space-between; 
     align-items: center;
     list-style: none;
-    margin: 0 0.75rem;
+    // margin: 0 0.75rem;
     @media (min-width: ${theme.tabletSize}) {
-        margin: 0 2rem 1rem;
+        // margin: 0 2rem 1rem;
     }
     @media (min-width: ${theme.desktopSize}) {
         border-bottom: 2px solid ${({ theme }) => theme.borderColor};
-        margin: 0 3rem 3rem;
+        // margin: 0 3rem 3rem;
     }
 `
 export const ContactCont = styled.div`

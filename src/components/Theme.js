@@ -36,7 +36,9 @@ export const theme = {
     h4FontSize: "20px",
     bodyFontSize: "18px",
     smallFontSize: "15px",
+    skinnyWindowSize: "414px",
     tabletSize: "768px",
+    smallLaptopSize: "1024px",
     desktopSize: "1200px",
     widescreenSize: "1400px",
 }

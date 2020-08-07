@@ -1,13 +1,12 @@
 import React from "react";
 import AboutBio from "./AboutBio";
-import { SectionHeading } from "../globalStyles";
-import { AboutSection } from "./aboutStyles";
+import { MainCont, SectionHeading } from "../globalStyles";
 
 const AboutCont = () => (
-    <AboutSection>
+    <MainCont>
         <SectionHeading>about me</SectionHeading>
         <AboutBio />
-    </AboutSection>
+    </MainCont>
 );
 
 export default AboutCont;

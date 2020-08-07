@@ -3,7 +3,7 @@ import './reset.css'
 import "../assets/fonts.css"
 // import Header from "./Header/Header"
 import Footer from "./Footer/Footer"
-import { Main, GlobalStyles } from "./globalStyles"
+import { MainCont, GlobalStyles } from "./globalStyles"
 
 import LogoTemp from "./Header/HeaderTemp/LogoTemp";
 import NavTemp from "./Header/HeaderTemp/NavTemp";
@@ -31,9 +31,9 @@ const Layout = ({ children }) => {
           <Toggle theme={theme} toggleTheme={themeToggler} />
         </MenuCont>
       </NavCont>
-      <Main>
+      <div>
         {children}
-      </Main>
+      </div>
       <Footer />
     </ThemeProvider>
   )

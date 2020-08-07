@@ -20,12 +20,43 @@ export const SectionHeading = styled.h1`
     text-align: center;
     margin: 3rem 0;
 `
-export const Main = styled.div`
-    // margin: 0 2rem;
+
+///////////////// Overall Main Container
+
+export const MainCont = styled.div`
+    width: 340px;
+    margin: 2.5rem auto;
+
+    @media (min-width: ${theme.skinnyWindowSize}) {
+      width: 375px;
+    }
     @media (min-width: ${theme.tabletSize}) {
-      margin: 0 3.25rem;
+      width: 700px;
+    }
+    @media (min-width: ${theme.smallLaptopSize}) {
+      width: 900px;
     }
     @media (min-width: ${theme.desktopSize}) {
-      margin: 0 5rem;
+      width: 1200px;
+    }
+`
+
+//////////////// TopBottom Marginless Container for MobileHeader & Footer
+
+export const Container = styled.div`
+    width: 340px;
+    margin: 0 auto;
+
+    @media (min-width: ${theme.skinnyWindowSize}) {
+      width: 375px;
+    }
+    @media (min-width: ${theme.tabletSize}) {
+      width: 700px;
+    }
+    @media (min-width: ${theme.smallLaptopSize}) {
+      width: 900px;
+    }
+    @media (min-width: ${theme.desktopSize}) {
+      width: 1200px;
     }
 `
