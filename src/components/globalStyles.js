@@ -15,10 +15,10 @@ export const SectionHeading = styled.h1`
     font-family: ${theme.headingFont};
     font-size: ${theme.h1FontSize};
     color: ${({ theme }) => theme.mainTxtColor};
-    text-transform: uppercase;
+    text-transform: lowercase;
     letter-spacing: 1px;
-    text-align: center;
-    margin: 3rem 0;
+    text-align: left;
+    margin: 2rem 0;
 `
 
 ///////////////// Overall Main Container
