@@ -1,92 +1,99 @@
 import styled from "styled-components";
 import { theme } from "../Theme";
 
+/////////////// Header
+
+export const HeaderBkgCont = styled.div`
+    display: block;
+    // position: sticky;
+    z-index: 20;
+    top: 0;
+    padding: 1rem 0;
+    // background-color: rgba(250, 250, 250, 0.70);
+    backdrop-filter: blur(10px);
+`
+export const HeaderSubCont = styled.div`
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: center;
+`
+
+/////////////// Logo
+
 export const HomeIcon = styled.p`
-    font-family: ${theme.bodyFont};
+    font-family: ${theme.headingFont};
     font-size: ${theme.h2FontSize};
     color: ${({ theme }) => theme.mainTxtColor};
-    margin: 1rem 0.25rem 0;
-    text-transform: uppercase;
+    text-transform: lowercase;
     font-weight: 500;
     letter-spacing: 1px;
+    margin-bottom: 0.25rem;
 `
 export const Title = styled.p`
     font-family: ${theme.bodyFont};
     font-size: ${theme.bodyFontSize};
     color: ${({ theme }) => theme.accentColor};
-    margin: 0.5rem 0.25rem 1rem;
+    text-transform: capitalize;
     font-weight: 400;
     letter-spacing: 1px;
-    @media (min-width: 768px) {
-        margin: 0.5rem 3rem 1rem;
-    }
 `
 export const Flex = styled.div`
     display: flex;
     flex-direction: column;
 `
+
+/////////////// Nav
+
 export const NavCont = styled.div`
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 0.75rem;
-    @media (min-width: ${theme.tabletSize}) {
-        margin: 0 2rem;
-    }
-    @media (min-width: ${theme.desktopSize}) {
-        margin: 0 3rem;
-    }
-`
-export const MenuCont = styled.div`
-    display: flex;
     flex-direction: column;
+    justify-content: flex-end;
+    text-align: right;
+
     @media (min-width: ${theme.tabletSize}) {
         flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        width: 325px;
+        text-align: center;
+    }
+    @media (min-width: ${theme.desktopSize}) {
+        width: 340px;
     }
 `
-export const linkStyle = {
-    textDecoration: "none"
-}
-
-export const NavText = styled.p`
+export const NavTxt = styled.p`
     font-family: ${theme.headingFont};
     font-size: ${theme.h4FontSize};
     color: ${({ theme }) => theme.mainTxtColor};
-    text-transform: uppercase;
+    text-transform: lowercase;
     letter-spacing: 1px;
-    text-align: right;
-    padding: 0.75rem 0;
     &:hover {
         font-weight: 600;
     }
     @media (min-width: ${theme.tabletSize}) {
-        padding: 0.75rem 1.25rem;
+        line-height: 28px;
         &:hover {
-            background-color: ${({ theme }) => theme.accentColor};
-            color: ${({ theme }) => theme.invertTxtColor};
-            border-radius: 5px;
+            border-bottom: 3px solid ${({ theme }) => theme.accentColor};
             font-weight: 400;
         }
     }
 `
-export const NavTextResume = styled.a`
+export const NavTxtResume = styled.a`
     font-family: ${theme.headingFont};
     font-size: ${theme.h4FontSize};
     color: ${({ theme }) => theme.mainTxtColor};
     text-decoration: none;
-    text-transform: uppercase;
+    text-transform: lowercase;
     letter-spacing: 1px;
-    text-align: right;
-    padding: 0.75rem 0;
     &:hover {
         font-weight: 600;
     }
     @media (min-width: ${theme.tabletSize}) {
-        padding: 0.75rem 1.25rem;
+        line-height: 28px;
         &:hover {
-            background-color: ${({ theme }) => theme.accentColor};
-            color: ${({ theme }) => theme.invertTxtColor};
-            border-radius: 5px;
+            border-bottom: 3px solid ${({ theme }) => theme.accentColor};
             font-weight: 400;
         }
     }

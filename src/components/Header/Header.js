@@ -1,31 +1,22 @@
 import React from "react";
-import { Link } from "gatsby";
-import { NavCont, Flex, HomeIcon, Title, MenuCont, NavText, NavTextResume, linkStyle } from "./headerStyles";
-import Pdf from "../../assets/FionaYeung-Resume2020.pdf";
+import { Container } from "../globalStyles";
+import { HeaderBkgCont, HeaderSubCont } from "./headerStyles";
+import Logo from "./Logo";
+import Nav from "./Nav";
 
-const Header = () => {
-
+const Header = ({ children }) => {
     return (
-        <NavCont>
-            <Link to="/" style={linkStyle}>
-                <Flex>
-                    <HomeIcon>Fiona Y.</HomeIcon>
-                    <Title>Full-Stack Developer</Title>
-                </Flex>
-            </Link>
-            <MenuCont>
-                <Link to="/" style={linkStyle}>
-                    <NavText>Work</NavText>
-                </Link>
-                <Link to="/about" style={linkStyle}>
-                    <NavText>About</NavText>
-                </Link>
-                <NavTextResume href={Pdf} target="_blank" rel="noopener noreferrer">Resume</NavTextResume>
-            </MenuCont>
-        </NavCont>
+        <HeaderBkgCont>
+            <Container>
+                <HeaderSubCont>
+                    <Logo />
+                    <Nav>
+                        {children}
+                    </Nav>
+                </HeaderSubCont>
+            </Container>
+        </HeaderBkgCont>
     )
 }
-
-
 
 export default Header;

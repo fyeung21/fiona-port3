@@ -60,3 +60,10 @@ export const Container = styled.div`
       width: 1200px;
     }
 `
+
+/////////////// JS Styling for Link to's
+
+export const linkStyle = {
+  color: "#000",
+  textDecoration: "none"
+}
