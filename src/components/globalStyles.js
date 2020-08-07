@@ -18,7 +18,7 @@ export const SectionHeading = styled.h1`
     text-transform: lowercase;
     letter-spacing: 1px;
     text-align: left;
-    margin: 2rem 0;
+    margin: 2rem 0 1rem;
 `
 
 ///////////////// Overall Main Container
