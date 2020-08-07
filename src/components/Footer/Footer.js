@@ -1,7 +1,7 @@
 import React from "react";
 import "font-awesome/css/font-awesome.min.css";
 import { Container } from "../globalStyles";
-import { FooterCont, Text, ContactCont, ContactLink, FootSpacer } from "./footerStyles";
+import { FooterCont, Text, ContactCont, ContactLink } from "./footerStyles";
 
 const Footer = () => {
     return (
@@ -29,7 +29,6 @@ const Footer = () => {
                     />
                 </ContactCont>
             </FooterCont>
-            <FootSpacer />
         </Container>
     )
 }
