@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { theme } from "../Theme";
 import { Link } from "gatsby";
 import projectsList from "../../assets/projectsList";
-import { StyledGrid } from "../MainProjects/MainProjectsCont";
+import { ProjectFlexCont } from "../MainProjects/mainProjectStyles";
 
 const MoreProjectsCont = () => {
 
@@ -16,7 +16,7 @@ const MoreProjectsCont = () => {
                 <NavText>back</NavText>
             </Link>
             <SectionTitle>a library of all of the projects I've worked on:</SectionTitle>
-            <StyledGrid>
+            <ProjectFlexCont>
 
                 {reverseList.map(item => {
                     return (
@@ -31,7 +31,7 @@ const MoreProjectsCont = () => {
                         />
                     )
                 })}
-            </StyledGrid>
+            </ProjectFlexCont>
         </div>
     )
 }

@@ -1,16 +1,15 @@
 import React from "react";
-import ProjectCard from "../ProjectCard/ProjectCard";
-import styled from "styled-components";
+import { ProjectsCont, ProjectFlexCont, Text } from "./mainProjectStyles";
 import projectsList from "../../assets/projectsList";
-import { theme } from "../Theme";
+import ProjectCard from "../ProjectCard/ProjectCard";
 
-const ProjectsContainer = () => {
+const MainProjectsCont = () => {
 
     const reverseList = projectsList.reverse()
 
     return (
-        <SectionTopCont>
-            <StyledGrid>
+        <ProjectsCont>
+            <ProjectFlexCont>
                 {reverseList.map(item => {
                     if (item.variant !== "Main") {
                         return null
@@ -27,45 +26,10 @@ const ProjectsContainer = () => {
                         />
                     )
                 })}
-            </StyledGrid>
+            </ProjectFlexCont>
             <Text>scroll right for more →</Text>
-        </SectionTopCont>
+        </ProjectsCont>
     )
 }
 
-const SectionTopCont = styled.div`
-    margin: 5rem auto;
-`
-
-export const StyledGrid = styled.div`
-    display: flex;
-    overflow-x: scroll;
-    margin: 0 0 1rem 0;
-    padding: 1rem 0 4rem 0;
-    width: 100%;
-    @media (min-width: ${theme.desktopSize}) {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 5rem 1rem;
-        overflow: visible;
-        padding: 0;
-    }
-    @media (min-width: ${theme.widescreenSize}) {
-        grid-gap: 5rem 3rem;
-        margin: 4rem auto;
-    }
-`
-const Text = styled.p`
-    font-family: ${theme.bodyFont};
-    font-size: ${theme.bodyFontSize};
-    color: ${({ theme }) => theme.mainTxtColor};
-    font-style: italic;
-    text-align: center;
-    margin: 0 0 6rem 0;
-
-    @media (min-width: ${theme.desktopSize}) {
-        display:none;
-    }
-`
-
-export default ProjectsContainer
+export default MainProjectsCont;

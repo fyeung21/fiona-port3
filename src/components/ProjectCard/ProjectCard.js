@@ -4,20 +4,20 @@ import { StyledLink, StyledCard, StyledImgCont, StyledImg, MobileVer, } from './
 import HoverCard from "./HoverCard";
 import CardInfo from "./CardInfo";
 
-const ProjectCard = (item) => {
+const ProjectCard = ({ github, img, title, desc, tags }) => {
 
     return (
-        <StyledLink href={item.github} target="_blank" rel="noopener noreferrer">
+        <StyledLink href={github} target="_blank" rel="noopener noreferrer">
             <StyledCard>
                 <StyledImgCont>
                     <StyledImg
-                        src={item.img}
+                        src={img}
                         alt="project screenshot"
                     />
-                    <HoverCard title={item.title} desc={item.desc} tags={item.tags} />
+                    <HoverCard title={title} desc={desc} tags={tags} />
                 </StyledImgCont>
                 <MobileVer>
-                    <CardInfo title={item.title} desc={item.desc} tags={item.tags} />
+                    <CardInfo title={title} desc={desc} tags={tags} />
                 </MobileVer>
             </StyledCard>
         </StyledLink>
