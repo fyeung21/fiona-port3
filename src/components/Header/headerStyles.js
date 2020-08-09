@@ -98,3 +98,22 @@ export const NavTxtResume = styled.a`
         }
     }
 `
+
+/////////////// NavIcon Container
+
+export const NavIconCont = styled.div`
+    display: none;
+    
+    color: ${({ theme }) => theme.mainTxtColor};
+
+    :hover {
+        color: ${({ theme }) => theme.hoverTxtColor};
+    }
+    :active {
+        color: ${({ theme }) => theme.activeTxtColor};
+    }
+
+    @media (min-width: ${theme.tabletSize}) {
+        display: none;
+    }
+`
