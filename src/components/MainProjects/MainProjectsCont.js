@@ -5,7 +5,7 @@ import ProjectCard from "../ProjectCard/ProjectCard";
 
 const MainProjectsCont = () => {
 
-    const reverseList = projectsList.reverse()
+    const reverseList = projectsList.slice().reverse()
 
     return (
         <ProjectsCont>
