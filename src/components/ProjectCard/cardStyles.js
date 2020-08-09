@@ -17,6 +17,7 @@ export const StyledCard = styled.div`
         height: 500px;
     }
     @media (min-width: ${theme.desktopSize}) {
+        box-shadow: none;
         background-color: none;
         width: 550px;
         height: 325px;
