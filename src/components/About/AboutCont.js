@@ -4,7 +4,7 @@ import { MainCont, SectionHeading } from "../globalStyles";
 
 const AboutCont = () => (
     <MainCont>
-        <SectionHeading>about me.</SectionHeading>
+        <SectionHeading>about me</SectionHeading>
         <AboutBio />
     </MainCont>
 );

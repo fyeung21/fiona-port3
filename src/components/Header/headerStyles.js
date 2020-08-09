@@ -10,7 +10,7 @@ export const HeaderBkgCont = styled.div`
     top: 0;
     padding: 1rem 0;
     // background-color: rgba(250, 250, 250, 0.70);
-    backdrop-filter: blur(10px);
+    // backdrop-filter: blur(10px);
 `
 export const HeaderSubCont = styled.div`
     display: flex;
