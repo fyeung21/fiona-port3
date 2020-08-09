@@ -1,7 +1,7 @@
 import React from "react";
 // import { Link } from "gatsby";
-import { StyledLink, StyledCard, StyledImgCont, StyledImg, MobileVer, } from './cardStyles';
-import HoverCard from "./HoverCard";
+import { StyledLink, StyledCard, MobileVer } from './cardStyles';
+import Thumbnail from "./Thumbnail";
 import CardInfo from "./CardInfo";
 
 const ProjectCard = ({ github, img, title, desc, tags }) => {
@@ -9,13 +9,7 @@ const ProjectCard = ({ github, img, title, desc, tags }) => {
     return (
         <StyledLink href={github} target="_blank" rel="noopener noreferrer">
             <StyledCard>
-                <StyledImgCont>
-                    <StyledImg
-                        src={img}
-                        alt="project screenshot"
-                    />
-                    <HoverCard title={title} desc={desc} tags={tags} />
-                </StyledImgCont>
+                <Thumbnail img={img} title={title} desc={desc} tags={tags} />
                 <MobileVer>
                     <CardInfo title={title} desc={desc} tags={tags} />
                 </MobileVer>

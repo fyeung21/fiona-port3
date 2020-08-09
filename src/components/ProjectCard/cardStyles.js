@@ -1,25 +1,25 @@
 import styled from "styled-components";
 import { theme } from "../Theme";
 
-//////////////// Project Card
+//////////////// Project Card Container
 
 export const StyledCard = styled.div`
     position: relative;
+    width: 340px;
+    height: 415px;
     margin: 0 2rem 0 0;
-    width: 400px;
-    height: 480px;
-    border-radius: 5px;
+    border-radius: 25px;
     box-shadow: ${({ theme }) => theme.cardShadow};
     background-color: ${({ theme }) => theme.cardBkgColor};
 
     @media (min-width: ${theme.tabletSize}) {
-        width: 550px;
-        height: 495px;
+        width: 465px;
+        height: 500px;
     }
     @media (min-width: ${theme.desktopSize}) {
-        width: 550px;
-        height: 300px;
         background-color: none;
+        width: 550px;
+        height: 325px;
         margin: 0 auto 4rem;
     }
 `
@@ -28,17 +28,21 @@ export const StyledLink = styled.a`
     text-decoration: none;
 `
 
+//////////////// Thumbnail
+
 export const StyledImgCont = styled.div`
     position: relative;
     margin: 0 2rem 0 0;
-    width: 400px;
-    height: 275px;
+    width: 340px;
+    height: 215px;
+
     @media (min-width: ${theme.tabletSize}) {
-        width: 550px;
+        width: 465px;
         height: 300px;
     }
-    @media (min-width: ${theme.widescreenSize}) {
-        margin: 0;
+    @media (min-width: ${theme.desktopSize}) {
+        width: 550px;
+        height: 325px;
     }
 `
 
@@ -48,13 +52,13 @@ export const StyledImg = styled.img`
     height: 100%;
     width: 100%;
     overflow: hidden;
-    border-radius: 5px 5px 0 0;
+    border-radius: 25px 25px 0 0;
     margin: 0 auto;
     object-fit: cover;
     filter: brightness(${({ theme }) => theme.imgBrightness});
 
     @media (min-width: ${theme.desktopSize}) {
-        border-radius: 20px;
+        border-radius: 25px;
     }
 `
 
@@ -72,14 +76,16 @@ export const StyledHover = styled.div`
         right: 0;
         top: 0;
         bottom: 0;
-        padding: 4rem;
+        padding: 6rem 4rem;
         background-color: ${({ theme }) => theme.cardHoverColor};
         opacity: 0;
-        transition: opacity 0.25s ease-in-out;
+        border-radius: 25px;
+        transition: all 0.25s ease-in-out;
 
         :hover {
             opacity: 1;
             backdrop-filter: blur(4px);
+            border-radius: 25px;
         }
     }  
 `
@@ -92,7 +98,7 @@ export const CardTitle = styled.p`
     font-weight: 400;
     text-transform: capitalize;
     letter-spacing: 1px;
-    margin: 0.5rem 0 1rem;
+    margin: 0 0 0.5rem;
 `
 export const CardDesc = styled.p`
     font-family: ${theme.bodyFont};
@@ -113,7 +119,11 @@ export const StackItem = styled.li`
     font-family: ${theme.bodyFont};
     font-size: ${theme.bodyFontSize};
     font-weight: 400;
-    margin: 0 1rem 0 0;    
+    margin: 0 1rem 0 0;
+
+    :last-child {
+        margin: 0;
+    }
 `
 
 //////////////// Container for Mobile Ver's Card Info
@@ -121,8 +131,11 @@ export const StackItem = styled.li`
 export const MobileVer = styled.div`
     display: flex;
     flex-direction: column;
-    padding: 2rem 1rem;
+    padding: 1.25rem;
 
+    @media (min-width: ${theme.tabletSize}) {
+        padding: 2rem;
+    }
     @media (min-width: ${theme.desktopSize}) {
         display: none;
     }
