@@ -133,6 +133,36 @@ const projectsList = [
         github: "https://github.com/fyeung21/r10-app",
         tags: ["React Native", "GraphQL"],
         variant: "Main"
+    },
+    {
+        id: 9,
+        title: "bcParks",
+        desc: "A mobile app for tracking time spent in parks and has journal entries to record user's moods.",
+        img: require("./images/r10collage.jpg"),
+        brief: "longer description, features ability to favourite sessions and has a short bio for each speaker as well a link to their wiki page",
+        platform: "Mobile",
+        duration: "3 weeks",
+        team: "Solo",
+        role: "Developer",
+        url: null,
+        github: "https://github.com/fyeung21/r10-app",
+        tags: ["React Native", "GraphQL"],
+        variant: "Archive"
+    },
+    {
+        id: 10,
+        title: "Portfolio 01",
+        desc: "A static portfolio website using React and React Router. Responsive to mobile, tablet, and desktop view.",
+        img: require("./images/ekport-thumbnail.jpg"),
+        brief: "longer description, features ability to favourite sessions and has a short bio for each speaker as well a link to their wiki page",
+        platform: "Web",
+        duration: "3 weeks",
+        team: "Solo",
+        role: "Developer",
+        url: "https://edisonko.design",
+        github: "https://github.com/fyeung21/edison-web",
+        tags: ["React"],
+        variant: "Main"
     }
 ];
 
