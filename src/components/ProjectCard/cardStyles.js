@@ -11,6 +11,7 @@ export const StyledCard = styled.div`
     border-radius: 25px;
     box-shadow: ${({ theme }) => theme.cardShadow};
     background-color: ${({ theme }) => theme.cardBkgColor};
+    transition: all 0.50s linear;
 
     @media (min-width: ${theme.tabletSize}) {
         width: 465px;
