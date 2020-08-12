@@ -1,11 +1,10 @@
 import React from "react";
 import { Link } from "gatsby";
-import { MainCont } from "../globalStyles";
+import { MainCont, linkStyle } from "../globalStyles";
 import { ProjectFlexCont, ProjectsCont } from "../MainProjects/mainProjectStyles";
+import { BackTxt, Text } from "./archiveStyles";
 import projectsList from "../../assets/projectsList";
 import ProjectCard from "../ProjectCard/ProjectCard";
-import styled from "styled-components";
-import { theme } from "../Theme";
 
 const MoreProjectsCont = () => {
 
@@ -14,9 +13,9 @@ const MoreProjectsCont = () => {
     return (
         <MainCont>
             <Link to="/" style={linkStyle}>
-                <NavText>back</NavText>
+                <BackTxt>back</BackTxt>
             </Link>
-            <SectionTitle>a library of all of the projects I've worked on:</SectionTitle>
+            <Text>A library of all of the projects I've worked on:</Text>
             <ProjectsCont>
                 <ProjectFlexCont>
                     {reverseList.map(item => {
@@ -37,30 +36,5 @@ const MoreProjectsCont = () => {
         </MainCont>
     )
 }
-
-const SectionTitle = styled.p`
-    font-family: ${theme.bodyFont};
-    font-size: ${theme.bodyFontSize};
-    color: ${({ theme }) => theme.mainTxtColor};
-`
-
-const linkStyle = {
-    textDecoration: "none",
-    color: "#000"
-}
-
-const NavText = styled.p`
-    font-family: ${theme.bodyFont};
-    font-size: ${theme.bodyFontSize};
-    font-weight: 500;
-    color: ${({ theme }) => theme.mainTxtColor};
-    padding: 0 0.5rem;
-    margin: 1rem 0;
-    text-transform: capitalize;
-
-    &:hover {
-        border-left: 3px solid ${({ theme }) => theme.accentColor};   
-    }
-`
 
 export default MoreProjectsCont
