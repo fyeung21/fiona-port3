@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { theme } from "../Theme";
 
-/////////////// Header
+/////////////// Header Containers
 
 export const HeaderBkgCont = styled.div`
     display: block;
@@ -9,8 +9,9 @@ export const HeaderBkgCont = styled.div`
     z-index: 20;
     top: 0;
     padding: 1rem 0;
-    // background-color: rgba(250, 250, 250, 0.70);
+    // background-color: ${({ theme }) => theme.NavBkgColor};
     // backdrop-filter: blur(10px);
+    // transition: all 0.50s linear;
 `
 export const HeaderSubCont = styled.div`
     display: flex;
@@ -41,19 +42,21 @@ export const Title = styled.p`
 export const Flex = styled.div`
     display: flex;
     flex-direction: column;
+
+    @media (min-width: ${theme.smallLaptopSize}) {
+        flex-direction: column;
+    }
 `
 
 /////////////// Nav
 
 export const NavCont = styled.div`
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    text-align: right;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 
     @media (min-width: ${theme.tabletSize}) {
-        flex-direction: row;
-        justify-content: space-between;
         align-items: center;
         margin: 0;
         width: 325px;
@@ -64,54 +67,71 @@ export const NavCont = styled.div`
     }
 `
 export const NavTxt = styled.p`
-    font-family: ${theme.headingFont};
-    font-size: ${theme.h4FontSize};
-    color: ${({ theme }) => theme.mainTxtColor};
-    text-transform: lowercase;
-    letter-spacing: 1px;
-    &:hover {
-        font-weight: 600;
-    }
+    display: none;
+
     @media (min-width: ${theme.tabletSize}) {
+        display: block;
+        font-family: ${theme.headingFont};
+        color: ${({ theme }) => theme.mainTxtColor};
+        font-size: ${theme.h4FontSize};
+        text-transform: lowercase;
+        letter-spacing: 1px;
         line-height: 28px;
+
         &:hover {
             border-bottom: 3px solid ${({ theme }) => theme.accentColor};
-            font-weight: 400;
         }
     }
 `
 export const NavTxtResume = styled.a`
-    font-family: ${theme.headingFont};
-    font-size: ${theme.h4FontSize};
-    color: ${({ theme }) => theme.mainTxtColor};
     text-decoration: none;
-    text-transform: lowercase;
-    letter-spacing: 1px;
-    &:hover {
-        font-weight: 600;
-    }
-    @media (min-width: ${theme.tabletSize}) {
-        line-height: 28px;
-        &:hover {
-            border-bottom: 3px solid ${({ theme }) => theme.accentColor};
-            font-weight: 400;
-        }
-    }
 `
 
 /////////////// NavIcon Container
 
 export const NavIconCont = styled.div`
-    display: none;
-    
+    display: flex;
+    justify-content: center;
     color: ${({ theme }) => theme.mainTxtColor};
 
     :hover {
-        color: ${({ theme }) => theme.hoverTxtColor};
+        color: ${({ theme }) => theme.accentColor};
     }
     :active {
-        color: ${({ theme }) => theme.activeTxtColor};
+        color: ${({ theme }) => theme.accentColor};
     }
+
+    @media (min-width: ${theme.tabletSize}) {
+        display: none;
+    }
+`
+export const ItemCont = styled.div`
+    display: flex;
+    align-items: center;
+`
+
+/////////////// MobileVer for Hide/Show desktop Top Nav
+
+export const MobileVer = styled.div`
+    display: none;
+
+    @media (min-width: ${theme.tabletSize}) {
+        display: block;
+    }
+`
+
+/////////////// BottomBar Container
+
+export const BottomBarCont = styled.div`
+    display: flex;
+    position: sticky;
+    z-index: 20;
+    bottom: 0;
+    padding: 1rem 0;
+    background-color: ${({ theme }) => theme.NavBkgColor};
+    backdrop-filter: blur(10px);
+    border-top: 1px solid lightgrey;
+    transition: all 0.50s linear;
 
     @media (min-width: ${theme.tabletSize}) {
         display: none;

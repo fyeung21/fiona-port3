@@ -8,8 +8,8 @@ export const lightTheme = {
     cardShadow: "15px 15px 25px #B8B8B8",
     cardHoverColor: "rgba(250, 250, 250, 0.85)",
     cardBkgColor: "#fafafa",
+    NavBkgColor: "rgba(250, 250, 250, 0.70)",
     borderColor: "lightgrey",
-    toggleBorder: "#f8f8f8",
     hoverOnAccentColor: "#7589D8"
 }
 
@@ -22,8 +22,8 @@ export const darkTheme = {
     cardShadow: "3px 3px 15px #000",
     cardHoverColor: "rgba(0, 0, 0, 0.80)",
     cardBkgColor: "#292929",
+    NavBkgColor: "rgba(18, 18, 18, 0.80)",
     borderColor: "#333333",
-    toggleBorder: "#121212",
     hoverOnAccentColor: "#7589D8"
 }
 
@@ -40,5 +40,4 @@ export const theme = {
     tabletSize: "768px",
     smallLaptopSize: "1024px",
     desktopSize: "1200px",
-    widescreenSize: "1400px",
 }

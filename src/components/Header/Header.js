@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "../globalStyles";
-import { HeaderBkgCont, HeaderSubCont } from "./headerStyles";
+import { HeaderBkgCont, HeaderSubCont, MobileVer } from "./headerStyles";
 import Logo from "./Logo";
 import Nav from "./Nav";
 
@@ -10,9 +10,11 @@ const Header = ({ children }) => {
             <Container>
                 <HeaderSubCont>
                     <Logo />
-                    <Nav>
-                        {children}
-                    </Nav>
+                    <MobileVer>
+                        <Nav>
+                            {children}
+                        </Nav>
+                    </MobileVer>
                 </HeaderSubCont>
             </Container>
         </HeaderBkgCont>

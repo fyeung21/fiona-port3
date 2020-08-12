@@ -9,6 +9,7 @@ import { ThemeProvider } from "styled-components";
 import { useDarkMode } from "../components/hooks/useDarkMode";
 import { lightTheme, darkTheme } from "./Theme";
 import Toggler from "../components/ThemeToggle/Toggler";
+import BottomBar from "./Header/BottomBar";
 
 const Layout = ({ children }) => {
 
@@ -26,6 +27,9 @@ const Layout = ({ children }) => {
         {children}
       </div>
       <Footer />
+      <BottomBar>
+        <Toggler theme={theme} toggleTheme={themeToggler} />
+      </BottomBar>
     </ThemeProvider>
   )
 }
