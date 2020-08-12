@@ -11,11 +11,13 @@ const MoreProjectsCont = () => {
     const reverseList = projectsList.slice().reverse()
 
     return (
-        <MainCont>
-            <Link to="/" style={linkStyle}>
-                <BackTxt>back</BackTxt>
-            </Link>
-            <Text>A library of all of the projects I've worked on:</Text>
+        <div>
+            <MainCont>
+                <Link to="/" style={linkStyle}>
+                    <BackTxt>back</BackTxt>
+                </Link>
+                <Text>A library of all of the projects I've worked on:</Text>
+            </MainCont>
             <ProjectsCont>
                 <ProjectFlexCont>
                     {reverseList.map(item => {
@@ -33,7 +35,7 @@ const MoreProjectsCont = () => {
                     })}
                 </ProjectFlexCont>
             </ProjectsCont>
-        </MainCont>
+        </div>
     )
 }
 
