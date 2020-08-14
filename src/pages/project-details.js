@@ -6,16 +6,17 @@ import Banner from "../components/ProjectDetails/Banner";
 import Details from "../components/ProjectDetails/Details";
 import Content from "../components/ProjectDetails/Content";
 import ProjectNav from "../components/ProjectDetails/ProjectNav";
+import { Container } from "../components/globalStyles";
 
 const ProjectDetails = () => (
     <Layout>
         <SEO title="Project Details" />
-        <div>
-            <Banner />
+        <Banner />
+        <Container>
             <Details />
             <Content />
-            <ProjectNav />
-        </div>
+        </Container>
+        <ProjectNav />
     </Layout>
 )
 

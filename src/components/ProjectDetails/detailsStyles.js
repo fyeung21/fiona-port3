@@ -71,35 +71,47 @@ export const TxtLink = styled.a`
 
 export const ProjectNavCont = styled.div`
     display: flex;
-    flex-wrap: wrap;
-    width: 90%;
-    margin: 7rem auto;
-    text-align: center;
-`
-export const NavTitleCont = styled.div`
-    display: flex;
-    align-items: center;
-`
-export const Title = styled.a`
-    font-family: ${theme.headingFont};
-    font-size: ${theme.h3FontSize};
-    color: ${({ theme }) => theme.mainTxtColor};
-    font-weight: 500;
-    text-decoration: none;
-    text-transform: uppercase;
-    border-radius: 5px;
-    line-height: 60px;
-    letter-spacing: 1px;
-    padding: 0 1.25rem;
-    margin: 0.75rem;
-    &:hover {
-        background-color: ${({ theme }) => theme.accentColor};
-        color: ${({ theme }) => theme.invertTxtColor};
-        cursor: pointer;
+    flex-direction: row;
+    overflow-x: scroll;
+    padding: 7rem 2rem 2rem;
+    margin: 0 auto;
+
+    @media (min-width: ${theme.tabletSize}) {
+        padding: 10rem 2rem 2rem
     }
 `
-export const Spacer = styled.p`
+export const NavCardCont = styled.div`
+    width: 350px;
+    margin: 0 1rem;
+`
+export const NavImg = styled.img`
+    height: 250px;
+    width: 100%;
+    border-radius: 25px;
+    object-fit: cover;
+    filter: grayscale(100%) brightness(${({ theme }) => theme.imgBrightness});
+    transition: filter .5s linear;
+
+    :hover {
+        filter:grayscale(0%) brightness(${({ theme }) => theme.imgBrightness});
+        transition: filter .08s linear;
+    }
+
+    @media (min-width: ${theme.skinnyWindowSize}) {
+        height: 250px;
+    }
+    @media (min-width: ${theme.desktopSize}) {
+        height: 250px;
+    }
+`
+export const NavTitle = styled.a`
+    color: ${({ theme }) => theme.mainTxtColor};
     font-family: ${theme.headingFont};
-    font-size: ${theme.h2FontSize};
-    color: ${({ theme }) => theme.mainTxtColor}; 
+    font-size: ${theme.h4FontSize};
+    font-weight: 400;
+    text-decoration: none;
+    line-height: 60px;
+    letter-spacing: 1px;
+    padding: 0 0 0.15rem;
+    margin: 0.75rem;
 `

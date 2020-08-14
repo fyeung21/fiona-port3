@@ -1,11 +1,11 @@
 import React from "react";
 import projectsList from "../../assets/projectsList";
-import ProjectNavTitle from "./ProjectNavTitle";
 import { ProjectNavCont } from "./detailsStyles";
+import NavCard from "./NavCard";
 
 const ProjectNav = () => {
 
-    const reverseList = projectsList.reverse()
+    const reverseList = projectsList.slice().reverse()
 
     return (
         <ProjectNavCont>
@@ -14,9 +14,10 @@ const ProjectNav = () => {
                     return null
                 }
                 return (
-                    <ProjectNavTitle
+                    <NavCard
                         key={item.id}
                         title={item.title}
+                        img={item.img}
                     />
                 )
             })}
