@@ -1,19 +1,12 @@
 import React from "react";
-import styled from "styled-components";
+import { BannerCont, BannerImg } from "./detailStyles";
 
-const Banner = ({ children }) => {
+const Banner = ({ bannerImg }) => {
     return (
-        <>
-            <BannerImg>{children}</BannerImg>
-        </>
+        <BannerCont>
+            <BannerImg src={bannerImg} alt={"banner img"} />
+        </BannerCont>
     );
-};
-
-const BannerImg = styled.div`
-    background-color: lightblue;
-    height: 400px;
-    margin: 2rem 0;
-    border-radius: 5px;
-`
+}
 
 export default Banner;

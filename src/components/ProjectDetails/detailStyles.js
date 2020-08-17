@@ -1,6 +1,24 @@
 import styled from "styled-components";
 import { theme } from "../Theme";
 
+///////////// Banner
+
+export const BannerCont = styled.div`
+    height: 400px;
+
+    @media (min-width: ${theme.tabletSize}) {
+        height: 600px;
+    }
+    @media (min-width: ${theme.smallLaptopSize}) {
+        height: 850px;
+    }
+`
+export const BannerImg = styled.img`
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(${({ theme }) => theme.imgBrightness});
+`
 
 /////////////  Stats Main Container 
 
@@ -79,23 +97,17 @@ export const TxtLink = styled.a`
 ////////////////// ProjectImage
 
 export const ProjectImgCont = styled.div`
-    margin: 1rem 0;
-    height: 350px;
     margin: 3rem auto;
 
-    @media (min-width: ${theme.tabletSize}) {
-        height: auto;
-    }
     @media (min-width: ${theme.desktopSize}) {
-        border-radius: 25px;
-        width: 1000px; 
+        width: 1200px; 
         margin: 4rem auto;
     }
 `
 export const Image = styled.img`
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
     filter: brightness(${({ theme }) => theme.imgBrightness});
 
     @media (min-width: ${theme.desktopSize}) {
