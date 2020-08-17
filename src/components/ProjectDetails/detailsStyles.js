@@ -1,67 +1,76 @@
 import styled from "styled-components";
 import { theme } from "../Theme";
 
-export const MainDetailsCont = styled.div`
-    margin: 3rem auto;
-    width:70%;
+
+/////////////  Stats Main Container 
+
+export const StatsMainCont = styled.div`
+    margin: 4rem 0;
 `
 
-/////////////  Details 
+/////////////  First Section of Stats (Project title & Brief)
 
-
-export const BriefCont = styled.div`
-    margin: 1rem;
-`
 export const ProjectTitle = styled.p`
     font-family: ${theme.headingFont};
     font-size: ${theme.h1FontSize};
     color: ${({ theme }) => theme.mainTxtColor};
     font-weight: 500;
-    text-transform: uppercase;
     letter-spacing: 1px;
-    margin: 4rem 1rem;
+    margin: 2rem 0;
+`
+export const BriefCont = styled.div`
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
 `
 export const BriefType = styled.p`
     font-family: ${theme.headingFont};
     font-size: ${theme.h3FontSize};
-    color: ${({ theme }) => theme.mainTxtColor};
     font-weight: 500;
-    text-transform: capitalize;
+    color: ${({ theme }) => theme.mainTxtColor};
+    text-transform: lowercase;
     margin: 1rem 0;
 `
-export const DetailsFlexCont = styled.div`
+
+/////////////  Second Section of Stats (Types)
+
+export const SubFlexCont = styled.div`
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    @media (min-width: ${theme.tabletSize}) {
+        flex-direction: row;
+    }
 `
-export const TxtCont1 = styled.p`
-    margin: 1rem 11rem 1rem 1rem;
-`
-export const TxtCont2 = styled.p`
-    margin: 1rem 3rem 1rem 1rem;
-`
-export const DetailsFlex = styled.div`
-    display:flex;
-    align-items: baseline;
+export const TypeCont = styled.div`
+    display: flex;
+    flex-direction: column;
     margin: 1rem 0;
+    width: 200px;
 `
-export const StatType = styled.p`
+export const Type = styled.p`
     font-family: ${theme.headingFont};
     font-size: ${theme.h3FontSize};
-    color: ${({ theme }) => theme.mainTxtColor};
     font-weight: 500;
-    text-transform: capitalize;
-    margin: 0 1rem 0 0;
+    color: ${({ theme }) => theme.mainTxtColor};
+    text-transform: lowercase;
 `
 export const Txt = styled.p`
     font-family: ${theme.bodyFont};
     font-size: ${theme.bodyFontSize};
+    font-weight: 300;
     color: ${({ theme }) => theme.mainTxtColor};
-    line-height: 22px;
+    line-height: 28px;
+    margin: 0.5rem 0;
 `
 export const TxtLink = styled.a`
     font-family: ${theme.bodyFont};
     font-size: ${theme.bodyFontSize};
     color: ${({ theme }) => theme.accentColor};
-    text-transform: capitalize;
+    line-height: 28px;
+    margin: 0.5rem 0;
+
     :hover {
         color: ${({ theme }) => theme.hoverOnAccentColor};
     }
