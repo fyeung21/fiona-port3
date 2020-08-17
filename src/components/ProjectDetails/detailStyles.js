@@ -76,6 +76,33 @@ export const TxtLink = styled.a`
     }
 `
 
+////////////////// ProjectImage
+
+export const ProjectImgCont = styled.div`
+    margin: 1rem 0;
+    height: 350px;
+    margin: 3rem auto;
+
+    @media (min-width: ${theme.tabletSize}) {
+        height: auto;
+    }
+    @media (min-width: ${theme.desktopSize}) {
+        border-radius: 25px;
+        width: 1000px; 
+        margin: 4rem auto;
+    }
+`
+export const Image = styled.img`
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(${({ theme }) => theme.imgBrightness});
+
+    @media (min-width: ${theme.desktopSize}) {
+        border-radius: 25px;
+    }
+`
+
 ///////////////  Project Nav
 
 export const ProjectNavCont = styled.div`

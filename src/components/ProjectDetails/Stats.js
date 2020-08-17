@@ -1,5 +1,5 @@
 import React from "react";
-import { StatsMainCont, ProjectTitle, BriefCont, SubFlexCont, TypeCont, Type, Txt, TxtLink } from "./detailsStyles";
+import { StatsMainCont, ProjectTitle, BriefCont, SubFlexCont, TypeCont, Type, Txt, TxtLink } from "./detailStyles";
 import { Container } from "../globalStyles";
 
 const Stats = () => {

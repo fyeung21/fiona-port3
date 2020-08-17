@@ -1,6 +1,6 @@
 import React from "react";
 import projectsList from "../../assets/projectsList";
-import { ProjectNavCont } from "./detailsStyles";
+import { ProjectNavCont } from "./detailStyles";
 import NavCard from "./NavCard";
 
 const ProjectNav = () => {

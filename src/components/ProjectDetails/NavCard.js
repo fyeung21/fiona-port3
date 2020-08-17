@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import { linkStyle } from "../globalStyles";
-import { NavCardCont, NavImg, NavTitle } from "./detailsStyles";
+import { NavCardCont, NavImg, NavTitle } from "./detailStyles";
 
 const NavCard = ({ link, img, title }) => {
     return (
