@@ -3,9 +3,9 @@ import { Link } from "gatsby";
 import { linkStyle } from "../globalStyles";
 import { NavCardCont, NavImg, NavTitle } from "./detailStyles";
 
-const NavCard = ({ link, img, title }) => {
+const NavCard = ({ page, img, title }) => {
     return (
-        <Link to="/" rel="noopener noreferrer" style={linkStyle}>
+        <Link to={page} rel="noopener noreferrer" style={linkStyle}>
             <NavCardCont>
                 <NavImg src={img} alt="project-thumbnail" />
                 <NavTitle>{title}</NavTitle>

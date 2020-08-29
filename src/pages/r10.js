@@ -7,11 +7,18 @@ import Stats from "../components/ProjectDetails/Stats";
 import ProjectImg from "../components/ProjectDetails/ProjectImg";
 import ProjectNav from "../components/ProjectDetails/ProjectNav";
 
-const ProjectDetails = () => (
+const R10 = () => (
     <Layout>
         <SEO title="R10" />
-        <Banner bannerImg={"https://via.placeholder.com/650x450/d3d3d3"} />
-        <Stats />
+        <Banner bannerImg={require("../assets/images/r10/r10collage.jpg")} />
+        <Stats
+            title={"R10"}
+            brief={"longer description, features ability to favourite sessions and has a short bio for each speaker as well a link to their wiki page"}
+            platform={"Mobile"}
+            demo={null}
+            github={"https://github.com/fyeung21/r10-app"}
+            tech={"React Native, GraphQL"}
+        />
         <ProjectImg projectImg={"https://via.placeholder.com/650x450/d3d3d3"} />
         <ProjectImg projectImg={"https://via.placeholder.com/650x450/d3d3d3"} />
         <ProjectImg projectImg={"https://via.placeholder.com/650x450/d3d3d3"} />
@@ -19,4 +26,4 @@ const ProjectDetails = () => (
     </Layout>
 )
 
-export default ProjectDetails;
+export default R10;

@@ -18,6 +18,7 @@ const ProjectNav = () => {
                         key={item.id}
                         title={item.title}
                         img={item.img}
+                        page={item.page}
                     />
                 )
             })}

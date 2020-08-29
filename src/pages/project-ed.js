@@ -7,11 +7,18 @@ import Stats from "../components/ProjectDetails/Stats";
 import ProjectImg from "../components/ProjectDetails/ProjectImg";
 import ProjectNav from "../components/ProjectDetails/ProjectNav";
 
-const ProjectDetails = () => (
+const ProjectEd = () => (
     <Layout>
-        <SEO title="project ed" />
-        <Banner bannerImg={"https://via.placeholder.com/650x450/d3d3d3"} />
-        <Stats />
+        <SEO title="project ed." />
+        <Banner bannerImg={require("../assets/images/ekport/ekport-thumbnail.jpg")} />
+        <Stats
+            title={"project ed."}
+            brief={"longer description, features ability to favourite sessions and has a short bio for each speaker as well a link to their wiki page"}
+            platform={"Web"}
+            demo={"https://edisonko.design"}
+            github={"https://github.com/fyeung21/edison-web"}
+            tech={"React"}
+        />
         <ProjectImg projectImg={"https://via.placeholder.com/650x450/d3d3d3"} />
         <ProjectImg projectImg={"https://via.placeholder.com/650x450/d3d3d3"} />
         <ProjectImg projectImg={"https://via.placeholder.com/650x450/d3d3d3"} />
@@ -19,4 +26,4 @@ const ProjectDetails = () => (
     </Layout>
 )
 
-export default ProjectDetails;
+export default ProjectEd;

@@ -16,14 +16,6 @@ const Stats = ({ title, brief, platform, team, role, demo, github, tech }) => {
                         <Type>platform</Type>
                         <Txt>{platform}</Txt>
                     </TypeCont>
-                    <TypeCont>
-                        <Type>team</Type>
-                        <Txt>{team}</Txt>
-                    </TypeCont>
-                    <TypeCont>
-                        <Type>role</Type>
-                        <Txt>{role}</Txt>
-                    </TypeCont>
 
                     {demo ?
                         <TypeCont>
