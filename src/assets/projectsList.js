@@ -12,7 +12,7 @@ const projectsList = [
         url: "https://fyeung21.github.io/Aloha-Webpage/",
         github: "https://github.com/fyeung21/Aloha-Webpage",
         tags: ["HTML", "CSS", "JS"],
-        variant: "Main"
+        variant: "Archives"
     },
     {
         id: 1,
@@ -26,6 +26,7 @@ const projectsList = [
         role: "Developer",
         url: "https://fyeung21.github.io/pong-project/",
         github: "https://github.com/fyeung21/pong-project",
+        page: "/pong",
         tags: ["JS", "NodeJS"],
         variant: "Main"
     },
@@ -41,6 +42,7 @@ const projectsList = [
         role: "Developer",
         url: "https://fyeung21.github.io/Instanews-App/",
         github: "https://github.com/fyeung21/Instanews-App",
+        page: "/instanews",
         tags: ["CSS", "JS"],
         variant: "Main"
     },
@@ -56,6 +58,7 @@ const projectsList = [
         role: "Developer",
         url: null,
         github: "https://github.com/fyeung21/Inhabitent-Site",
+        page: "/inhabitent",
         tags: ["CSS", "JS", "WordPress"],
         variant: "Main"
     },
@@ -86,6 +89,7 @@ const projectsList = [
         role: "Junior Developer",
         url: "https://radio.van.cp.academy.red",
         github: "https://github.com/fyeung21/radio-ws1-2019",
+        page: "/coop-radio",
         tags: ["CSS", "JS", "WordPress"],
         variant: "Main"
     },
@@ -131,6 +135,7 @@ const projectsList = [
         role: "Developer",
         url: null,
         github: "https://github.com/fyeung21/r10-app",
+        page: "/r10",
         tags: ["React Native", "GraphQL"],
         variant: "Main"
     },
@@ -146,12 +151,13 @@ const projectsList = [
         role: "Developer",
         url: null,
         github: "https://github.com/fyeung21/r10-app",
+        page: "/bc-parks",
         tags: ["React Native", "GraphQL"],
         variant: "Archive"
     },
     {
         id: 10,
-        title: "Portfolio 01",
+        title: "project ed.",
         desc: "A static portfolio website using React and React Router. Responsive to mobile, tablet, and desktop view.",
         img: require("./images/ekport/ekport-thumbnail.jpg"),
         brief: "longer description, features ability to favourite sessions and has a short bio for each speaker as well a link to their wiki page",
@@ -161,6 +167,7 @@ const projectsList = [
         role: "Developer",
         url: "https://edisonko.design",
         github: "https://github.com/fyeung21/edison-web",
+        page: "/project-ed",
         tags: ["React"],
         variant: "Main"
     }

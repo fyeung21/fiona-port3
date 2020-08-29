@@ -98,7 +98,6 @@ export const CardTitle = styled.p`
     font-family: ${theme.headingFont};
     font-size: ${theme.h3FontSize};
     font-weight: 400;
-    text-transform: capitalize;
     letter-spacing: 1px;
     margin: 0 0 0.5rem;
 `
