@@ -22,6 +22,7 @@ const MainProjectsCont = () => {
                             img={item.img}
                             url={item.url}
                             github={item.github}
+                            page={item.page}
                             tags={item.tags}
                         />
                     )
