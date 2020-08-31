@@ -1,0 +1,10 @@
+.return-top {
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    outline: none;
+    height: 50px;
+    width: 50px;
+    border: 2px solid #9dabe3;
+    border-radius: 25px;
+    cursor: pointer;
+}

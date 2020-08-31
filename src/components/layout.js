@@ -10,6 +10,7 @@ import { useDarkMode } from "../components/hooks/useDarkMode";
 import { lightTheme, darkTheme } from "./Theme";
 import Toggler from "../components/ThemeToggle/Toggler";
 import BottomBar from "./Header/BottomBar";
+import ReturnTop from "./ReturnTop/ReturnTop";
 
 const Layout = ({ children }) => {
 
@@ -20,6 +21,7 @@ const Layout = ({ children }) => {
   return (
     <ThemeProvider theme={themeMode}>
       <GlobalStyles />
+      <ReturnTop />
       <Header>
         <Toggler theme={theme} toggleTheme={themeToggler} />
       </Header>
