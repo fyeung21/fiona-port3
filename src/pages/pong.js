@@ -10,10 +10,10 @@ import ProjectNav from "../components/ProjectDetails/ProjectNav";
 const Pong = () => (
     <Layout>
         <SEO title="Pong" />
-        <Banner bannerImg={require("../assets/images/pong/pong-thumbnail.jpg")} />
+        <Banner bannerImg={require("../assets/images/pong/pong-thumbnail.png")} />
         <Stats
             title={"Pong"}
-            brief={"longer description, features ability to favourite sessions and has a short bio for each speaker as well a link to their wiki page"}
+            brief={null}
             platform={"Web"}
             demo={"https://fyeung21.github.io/pong-project/"}
             github={"https://github.com/fyeung21/pong-project"}

@@ -10,10 +10,10 @@ import ProjectNav from "../components/ProjectDetails/ProjectNav";
 const Inhabitent = () => (
     <Layout>
         <SEO title="Inhabitent" />
-        <Banner bannerImg={require("../assets/images/inhabit/inhabit-thumbnail.jpg")} />
+        <Banner bannerImg={require("../assets/images/inhabit/inhabit-thumbnail.png")} />
         <Stats
             title={"Inhabitent"}
-            brief={"longer description, features ability to favourite sessions and has a short bio for each speaker as well a link to their wiki page"}
+            brief={null}
             platform={"Web"}
             demo={null}
             github={"https://github.com/fyeung21/Inhabitent-Site"}

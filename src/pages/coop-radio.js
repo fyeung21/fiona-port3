@@ -10,12 +10,11 @@ import ProjectNav from "../components/ProjectDetails/ProjectNav";
 const CoopRadio = () => (
     <Layout>
         <SEO title="Coop Radio" />
-        <Banner bannerImg={require("../assets/images/coop/coop.png")} />
+        <Banner bannerImg={require("../assets/images/coop/coop-thumbnail.png")} />
         <Stats
             title={"Coop Radio"}
-            brief={"longer description, features ability to favourite sessions and has a short bio for each speaker as well a link to their wiki page"}
+            brief={null}
             platform={"Web"}
-            demo={"https://radio.van.cp.academy.red"}
             github={"https://github.com/fyeung21/radio-ws1-2019"}
             tech={"CSS, JS, WordPress"}
         />

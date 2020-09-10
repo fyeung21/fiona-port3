@@ -10,10 +10,10 @@ import ProjectNav from "../components/ProjectDetails/ProjectNav";
 const R10 = () => (
     <Layout>
         <SEO title="R10" />
-        <Banner bannerImg={require("../assets/images/r10/r10collage.jpg")} />
+        <Banner bannerImg={require("../assets/images/r10/r10-thumbnail.png")} />
         <Stats
             title={"R10"}
-            brief={"longer description, features ability to favourite sessions and has a short bio for each speaker as well a link to their wiki page"}
+            brief={null}
             platform={"Mobile"}
             demo={null}
             github={"https://github.com/fyeung21/r10-app"}
