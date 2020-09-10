@@ -7,10 +7,19 @@ const Stats = ({ title, brief, platform, team, role, demo, github, tech }) => {
         <Container>
             <StatsMainCont>
                 <ProjectTitle>{title}</ProjectTitle>
-                <BriefCont>
-                    <Type>brief</Type>
-                    <Txt>{brief}</Txt>
-                </BriefCont>
+
+                {brief ?
+                    <BriefCont>
+                        <Type>brief</Type>
+                        <Txt>{brief}</Txt>
+                    </BriefCont>
+                    :
+                    <BriefCont>
+                        <Type>brief</Type>
+                        <Txt>{"Written content to be updated soon!"}</Txt>
+                    </BriefCont>
+                }
+
                 <SubFlexCont>
                     <TypeCont>
                         <Type>platform</Type>

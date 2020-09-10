@@ -13,7 +13,7 @@ const ProjectEd = () => (
         <Banner bannerImg={require("../assets/images/ekport/ekport-thumbnail.jpg")} />
         <Stats
             title={"project ed."}
-            brief={"longer description, features ability to favourite sessions and has a short bio for each speaker as well a link to their wiki page"}
+            brief={null}
             platform={"Web"}
             demo={"https://edisonko.design"}
             github={"https://github.com/fyeung21/edison-web"}
